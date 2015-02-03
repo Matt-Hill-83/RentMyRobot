@@ -21,3 +21,5 @@ module RentMyRobot
     # config.i18n.default_locale = :de
   end
 end
+
+config.assets.initialize_on_precompile = false
