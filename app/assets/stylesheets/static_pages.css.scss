@@ -1,3 +1,28 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.header_div {
+  text-align: center;
+}
+
+.splash_image_div {
+
+  // background-color: bisque;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+}
+
+.splash_image {
+
+  height: 500px;
+  width: auto;
+  margin-left: 50%;
+  margin-right: 50%;
+}
