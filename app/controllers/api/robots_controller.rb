@@ -1,7 +1,7 @@
 module Api
   class RobotsController < ApiController
     def create
-      @robot = current_user.robots.new(robot_params)
+      @robot = Robots.new(robot_params)
 
       if @robot.save
         render json: @robot
@@ -17,7 +17,7 @@ module Api
     end
 
     def index
-      @robots = current_user.robots
+      @robots = Robot.all
       render json: @robots
     end
 

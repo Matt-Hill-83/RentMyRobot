@@ -1,25 +1,3 @@
 
 --------------------------------
 <h1 class="header_div">Rent My Robot</h1>
-
-<div>
-  <h4><%= robot.escape('name') %></h4>
-</div>
-
-  <div class="detail">
-
-    <% for (var attr in robot.attributes) { %>
-        <% if (attr === "created_at" || attr === "updated_at") continue; %>
-        <span style="font-weight: bold;"><%= attr %>:</span>
-        <%= robot.get(attr) %>
-
-      <br>
-    <% } %>
-
-  </div>
-<div class="splash_image_div">
-  <img src="assets/<%= robot.escape('image_url') %>"
-      height=200px
-      alt="Picture your robot here1!"
-      class="splash_image">
-</div>
