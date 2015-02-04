@@ -1,14 +1,24 @@
 
 <div>
   <h4><%= robot.escape('name') %></h4>
-  <h4><%= robot.escape('image_url') %></h4>
 </div>
 
+<%= robot.attributes.each%>
+
+<h1 class="header_div">Rent My Robot</h1>
+
+  <div class="detail">
+
+    <% for (var attr in robot.attributes) { %>
+      <%= attr %>:     
+      <%= robot.get(attr) %>
+      <br>
+    <% } %>
+
+  </div>
 <div class="splash_image_div">
   <img src="assets/<%= robot.escape('image_url') %>"
       height=200px
       alt="Picture your robot here1!"
       class="splash_image">
 </div>
-
-<h1 class="header_div">Rent My Robot</h1>
