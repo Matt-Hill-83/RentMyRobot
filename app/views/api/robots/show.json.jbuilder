@@ -1,4 +1,11 @@
-json.extract! @robot, :id, :name, :image_url, :created_at, :updated_at
+json.extract! @robot, :id,
+                      :name,
+                      :manufacturer,
+                      :location,
+                      :image_url,
+                      :video_url,
+                      :created_at,
+                      :updated_at
 
 # json.members @robot.members do |member|
 #   json.id member.id
