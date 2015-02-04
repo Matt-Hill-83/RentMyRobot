@@ -9,11 +9,14 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
 
 
   render: function () {
-    var content = this.template({
-      robot: this.model
-    });
-    this.$el.html(content);
-    return this;
+    if (!this.model.get('image_url')){
+      return this;
+    }
+      var content = this.template({
+        robot: this.model
+      });
+      this.$el.html(content);
+      return this;
   },
 
 
