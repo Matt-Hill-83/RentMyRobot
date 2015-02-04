@@ -24,7 +24,6 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
 
   robotShow: function (id) {
     var robot = RentMyRobot.Collections.robots.getOrFetch(id);
-    debugger
     var view = new RentMyRobot.Views.RobotShow({
       model: robot
     });

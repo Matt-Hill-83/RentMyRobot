@@ -4,7 +4,6 @@ RentMyRobot.Collections.Robots = Backbone.Collection.extend({
 
   getOrFetch: function (id) {
     var robot = this.get(id);
-
     if (!robot) {
       robot = new RentMyRobot.Models.Robot({ id: id });
       robot.fetch({

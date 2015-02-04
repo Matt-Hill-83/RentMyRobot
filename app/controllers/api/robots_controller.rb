@@ -22,9 +22,9 @@ module Api
     end
 
     def show
-      @robot = Robot.includes(:members, lists: :cards).find(params[:id])
+      @robot = Robot.find(params[:id])
 
-      if @robot.is_member?(current_user)
+      if @robot
         render :show
       else
         render json: ["You aren't a member of this robot"], status: 403

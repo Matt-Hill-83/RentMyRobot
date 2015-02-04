@@ -1,0 +1,2 @@
+module Api::RobotsHelper
+end
