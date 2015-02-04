@@ -27,7 +27,7 @@ module Api
       if @robot
         render :show
       else
-        render json: ["You aren't a member of this robot"], status: 403
+        render json: ["robot error"], status: 403
       end
     end
 

@@ -1,4 +1,4 @@
-RentMyRobot.Views.BoardsIndex = Backbone.View.extend({
+RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
   template: JST['robots/index'],
 
   className: 'robots-index',
