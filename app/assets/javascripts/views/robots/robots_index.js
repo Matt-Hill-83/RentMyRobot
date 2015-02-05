@@ -13,6 +13,11 @@ RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
     var content = this.template();
     this.$el.html(content);
 
+    map = new RentMyRobot.Views.BasicMapShow();
+    this.$el.html(map.$el);
+    map.render();
+
+
     var that = this;
     this.collection.each(function (robot) {
       var view = new RentMyRobot.Views.RobotIndexElement({ model: robot });
