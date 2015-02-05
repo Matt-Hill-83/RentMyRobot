@@ -17,12 +17,12 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
       });
       this.$el.html(content);
 
-      // // add nested comments
-      // var that = this;
-      // this.collection.each(function (robot) {
-      //   var view = new RentMyRobot.Views.RobotComment({ model: robot });
-      //   that.$el.append(view.render().$el);
-      // });
+      // add nested comments
+      var that = this;
+      this.collection.each(function (robot) {
+        var view = new RentMyRobot.Views.RobotComment({ model: robot });
+        that.$el.append(view.render().$el);
+      });
 
       return this;
   },
