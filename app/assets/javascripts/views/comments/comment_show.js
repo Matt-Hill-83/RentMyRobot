@@ -12,7 +12,7 @@ RentMyRobot.Views.CommentShow = Backbone.CompositeView.extend({
       return this;
     }
       var content = this.template({
-        robot: this.model
+        comment: this.model
       });
 
       this.$el.html(content);

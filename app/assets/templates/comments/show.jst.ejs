@@ -1,5 +1,18 @@
 
 --------------------------------
 
-
 <h1 class="header_div">Show Comment</h1>
+
+<div>
+  <h4>title: <%= comment.escape('title') %></h4>
+  <h4>body: <%= comment.escape('body') %></h4>
+</div>
+
+  <div class="detail">
+    <% for (var attr in comment.attributes) { %>
+        <% if (attr === "created_at" || attr === "updated_at") continue; %>
+        <span style="font-weight: bold;"><%= attr %>:</span>
+        <%= comment.get(attr) %>
+      <br>
+    <% } %>
+  </div>
