@@ -3,6 +3,16 @@
 <head>
   <title>Rent My Robot</title>
   <%= stylesheet_link_tag    "application", media: "all" %>
+<% if Rails.env.production? %>
+
+  <% api_key = "key=AIzaSyBF_Ppz0dfiXFAf0oaaYaUVF0HnazPN_-E" %>
+<% else %>
+  <% api_key = '' %>
+<% end %>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?<%= api_key %>"></script>
+
+
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>

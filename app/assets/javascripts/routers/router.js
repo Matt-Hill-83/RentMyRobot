@@ -9,7 +9,11 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
 
   routes: {
     '': 'robotsIndex',
-    'robots/:id': 'robotShow'
+    'robots/:id': 'robotShow',
+    'basic': 'basicMapShow',
+    'markers': 'markerMapShow',
+    'events': 'eventsMapShow',
+    'search': 'searchShow'
   },
 
   robotsIndex: function () {
@@ -34,5 +38,51 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     this.currentView && this.currentView.remove();
     this.currentView = view;
     this.$rootEl.html(view.render().$el);
+  },
+
+  ////////////////new stuff
+
+  basicMapShow: function () {
+    var view = new RentMyRobot.Views.BasicMapShow();
+    this._swapView(view);
+  },
+
+  // markerMapShow: function () {
+  //   var listings = new GoogleMapsDemo.Collections.Listings();
+  //   listings.fetch();
+  //   var view = new GoogleMapsDemo.Views.MarkerMapShow({
+  //     collection: listings
+  //   });
+  //   this._swapView(view);
+  // },
+  //
+  // eventsMapShow: function () {
+  //   var listings = new GoogleMapsDemo.Collections.Listings();
+  //   listings.fetch();
+  //   var view = new GoogleMapsDemo.Views.EventMapShow({
+  //     collection: listings
+  //   });
+  //   this._swapView(view);
+  // },
+  //
+  // searchShow: function () {
+  //   debugger
+  //   var listings = new GoogleMapsDemo.Collections.Listings();
+  //   listings.fetch();
+  //   var view = new GoogleMapsDemo.Views.SearchShow({
+  //     collection: listings
+  //   });
+  //   this._swapView(view);
+  // },
+
+  _swapView: function (view) {
+    this._currentView && this._currentView.remove();
+    this._currentView = view;
+
+    // Because of how the Google Map resizes, we must insert the view's `$el`
+    // before initializing the map object. Beware of this in any views that
+    // contain a map subview.
+    this.$rootEl.html(view.$el);
+    view.render();
   }
 });

@@ -15,3 +15,13 @@
  */
 
  @import "bootstrap";
+
+ //By default, the map will resize itself to fill its container. If you try to put the
+ //map in an empty <div>, it may not show up (since the <div> has collapsed itself). I
+ //have the following lines in my application.css to make sure the map shows up.
+
+ html, body, #map-canvas {
+   height: 500px;
+   margin: 0;
+   padding: 0;
+ }
