@@ -4,6 +4,8 @@
 
 <div>
   <h4><%= robot.escape('name') %></h4>
+  <h4>title: <%= robot.comments().models[0].attributes.title %></h4>
+  <h4>body: <%= robot.comments().models[0].attributes.body %></h4>
 </div>
 
 <video width="400" controls>

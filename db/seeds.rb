@@ -10,8 +10,8 @@ def create_comment!(i)
   Comment.create!(
     user_id: 1,
     robot_id: 5,
-    title: 'Title',
-    body: "Body"
+    title: i,
+    body: i*10
   )
 end
 

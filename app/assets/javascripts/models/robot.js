@@ -1,20 +1,20 @@
 RentMyRobot.Models.Robot = Backbone.Model.extend({
   urlRoot: 'api/robots',
 
-  // lists: function () {
-  //   if (!this._lists) {
-  //     this._lists = new RentMyRobot.Collections.Lists([], { robot: this });
-  //   }
-  //
-  //   return this._lists;
-  // },
+  comments: function () {
+    if (!this._comments) {
+      this._comments = new RentMyRobot.Collections.Comments([], { robot: this });
+    }
 
-  // parse: function (response) {
-  //   if (response.lists) {
-  //     this.lists().set(response.lists, { parse: true });
-  //     delete response.lists;
-  //   }
-  //
-  //   return response;
-  // }
+    return this._comments;
+  },
+
+  parse: function (response) {
+    if (response.comments) {
+      this.comments().set(response.comments, { parse: true });
+      delete response.comments;
+    }
+
+    return response;
+  }
 });
