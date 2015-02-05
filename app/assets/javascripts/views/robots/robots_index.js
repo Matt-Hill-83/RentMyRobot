@@ -8,12 +8,15 @@ RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
     $('body').css('background-color', 'rgb(255, 255, 255)')
   },
 
+  tagName: 'ul',
   render: function () {
-    var content = this.template({
-      robots: this.collection
-    });
-
+    var content = this.template();
     this.$el.html(content);
+    var that = this;
+    this.collection.each(function (robot) {
+      var view = new RentMyRobot.Views.RobotShow({ model: robot });
+      that.$el.append(view.render().$el);
+    });
     return this;
   }
 });
