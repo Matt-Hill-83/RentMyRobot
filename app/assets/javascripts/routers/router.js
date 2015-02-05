@@ -7,6 +7,9 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     this.$rootEl = $('#main');
   },
 
+
+
+
   routes: {
     '': 'robotsIndex',
     'robots/:id': 'robotShow',
@@ -43,18 +46,18 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
   },
 
   // markerMapShow: function () {
-  //   var listings = new GoogleMapsDemo.Collections.Listings();
+  //   var listings = new RentMyRobot.Collections.Listings();
   //   listings.fetch();
-  //   var view = new GoogleMapsDemo.Views.MarkerMapShow({
+  //   var view = new RentMyRobot.Views.MarkerMapShow({
   //     collection: listings
   //   });
   //   this._swapView(view);
   // },
   //
   // eventsMapShow: function () {
-  //   var listings = new GoogleMapsDemo.Collections.Listings();
+  //   var listings = new RentMyRobot.Collections.Listings();
   //   listings.fetch();
-  //   var view = new GoogleMapsDemo.Views.EventMapShow({
+  //   var view = new RentMyRobot.Views.EventMapShow({
   //     collection: listings
   //   });
   //   this._swapView(view);
@@ -62,9 +65,9 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
   //
   // searchShow: function () {
   //   debugger
-  //   var listings = new GoogleMapsDemo.Collections.Listings();
+  //   var listings = new RentMyRobot.Collections.Listings();
   //   listings.fetch();
-  //   var view = new GoogleMapsDemo.Views.SearchShow({
+  //   var view = new RentMyRobot.Views.SearchShow({
   //     collection: listings
   //   });
   //   this._swapView(view);
