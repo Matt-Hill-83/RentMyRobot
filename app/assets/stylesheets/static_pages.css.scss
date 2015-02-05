@@ -29,8 +29,12 @@
 
 .robot_index_element_div {
   background-color: blue;
-  position: relative;
-  float: top
+  // position: relative;
+  // float: top;
+  border-style: solid;
+  border-width: 2px;
+  margin: 10px;
+
 }
 
 .robot_index_element_image_div {
