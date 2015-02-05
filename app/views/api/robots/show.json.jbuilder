@@ -7,11 +7,12 @@ json.extract! @robot, :id,
                       :created_at,
                       :updated_at
 
-# json.members @robot.members do |member|
-#   json.id member.id
-#   json.email member.email
-#   json.gravatar_url member.gravatar_url
-# end
+json.comments @robot.comments do |comment|
+  json.id comment.id
+  json.user_id comment.user_id
+  json.title comment.title
+  json.body comment.body
+end
 #
 # json.lists @robot.lists do |list|
 #   json.extract! list, :id, :title, :ord, :created_at, :updated_at
