@@ -1,7 +1,6 @@
-RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
+RentMyRobot.Views.CommentShow = Backbone.CompositeView.extend({
   className: 'clearfix',
-
-  template: JST['robots/show'],
+  template: JST['comments/show'],
 
   initialize: function () {
     this.listenTo(this.model, 'sync', this.render);
@@ -9,20 +8,14 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
 
 
   render: function () {
-    if (!this.model.get('image_url')){
+    if (!this.model.get('title')){
       return this;
     }
       var content = this.template({
         robot: this.model
       });
-      this.$el.html(content);
 
-      // add nested comments
-      var that = this;
-      this.collection.each(function (robot) {
-        var view = new RentMyRobot.Views.RobotComment({ model: robot });
-        that.$el.append(view.render().$el);
-      });
+      this.$el.html(content);
 
       return this;
   },

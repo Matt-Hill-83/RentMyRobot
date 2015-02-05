@@ -1,29 +1,5 @@
 
 --------------------------------
+
+
 <h1 class="header_div">Show Comment</h1>
-
-<div>
-  <h4><%= robot.escape('name') %></h4>
-</div>
-
-<video width="400" controls>
-  <source src="assets/mov_bbb.mp4" type="video/mp4">
-  <source src="assets/mov_bbb.ogg" type="video/ogg">
-  Your browser does not support HTML5 video.
-</video>
-
-  <div class="detail">
-    <% for (var attr in robot.attributes) { %>
-        <% if (attr === "created_at" || attr === "updated_at") continue; %>
-        <span style="font-weight: bold;"><%= attr %>:</span>
-        <%= robot.get(attr) %>
-      <br>
-    <% } %>
-  </div>
-
-<div class="splash_image_div">
-  <img src="assets/<%= robot.escape('image_url') %>"
-      height=200px
-      alt="Picture your robot here1!"
-      class="splash_image">
-</div>
