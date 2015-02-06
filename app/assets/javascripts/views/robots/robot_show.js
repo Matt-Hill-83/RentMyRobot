@@ -12,7 +12,6 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
     if (!this.model.get('name')){ //qqq why am I checking for the name?
       return this;
     }
-
     var content = this.template({
       robot: this.model
     });

@@ -1,10 +1,9 @@
 
 --------------------------------
 
-<h1 class="header_div">Show Comment</h1>
+<h1 class="header_div"><%= comment.escape('title') %></h1>
 
 <div>
-  <h4>title: <%= comment.escape('title') %></h4>
   <h4>body: <%= comment.escape('body') %></h4>
 </div>
 
