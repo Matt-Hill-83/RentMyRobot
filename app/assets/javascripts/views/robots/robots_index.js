@@ -25,10 +25,9 @@ RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
     var that = this;
     this.collection.each(function (robot) {
       var view = new RentMyRobot.Views.RobotIndexElement({ model: robot });
-      // that.$el.append(view.render().$el);
       that.$el.find('#list-of-robots').append(view.render().$el);
-      // that.$el.find('#index').html(map.$el);
     });
+
     return this;
   }
 });

@@ -4,7 +4,7 @@ def create_robot!(i)
     manufacturer: 'Roboco',
     image_url: "robot" + i.to_s + ".png",
     lat: rand() * 0.010 + 37.7822,
-    long: rand() * 0.010 + -122.4167,
+    lng: rand() * 0.010 + -122.4167,
   )
 end
 
@@ -12,8 +12,8 @@ def create_comment!(i)
   Comment.create!(
     user_id: 1,
     robot_id: 5,
-    title: i,
-    body: i*10
+    title: 'Commemt ' + i.to_s,
+    body: 'Body ' + i.to_s,
   )
 end
 
