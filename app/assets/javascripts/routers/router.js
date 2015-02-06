@@ -49,7 +49,7 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
   searchShow: function () {
     // var listings = new RentMyRobot.Collections.Listings();
     // listings.fetch();
-    RentMyRobot.Collections.robots.fetch();
+    RentMyRobot.Collections.robots.fetch();  //qqq do I need to fetch here?
 
     var view = new RentMyRobot.Views.SearchShow({
       collection: RentMyRobot.Collections.robots //qqq do I need to do a fetch here?

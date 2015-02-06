@@ -1,22 +1,17 @@
 RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
   template: JST['robots/index'],
 
-  className: 'robots-index',
+  className: 'robots-index', // gets assigned to $el, which is a div by default
+  tagName: 'ul', //changes the default div to a ul
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
     $('body').css('background-color', 'rgb(255, 255, 255)')
   },
 
-  tagName: 'ul',
   render: function () {
     var content = this.template();
     this.$el.html(content);
-
-    // // add Google Map
-    // map = new RentMyRobot.Views.BasicMapShow();
-    // this.$el.html(map.$el);
-    // map.render();
 
     // add Google Map
     map = new RentMyRobot.Views.MarkerMapShow({
