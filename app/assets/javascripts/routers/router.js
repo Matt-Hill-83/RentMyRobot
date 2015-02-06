@@ -1,14 +1,7 @@
 RentMyRobot.Routers.Router = Backbone.Router.extend({
   initialize: function() {
-    // var dropDownView = new RentMyRobot.Views.DropDownView({
-    //   collection: RentMyRobot.Collections.robots
-    // });
-    // $('#add-dropdown').append(dropDownView.render().$el);
     this.$rootEl = $('#main');
   },
-
-
-
 
   routes: {
     '': 'robotsIndex',
@@ -37,7 +30,6 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     this._swapView(view);
   },
 
-
   ////////////////new stuff
 
   basicMapShow: function () {
@@ -51,6 +43,17 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     });
     this._swapView(view);
   },
+
+  searchShow: function () {
+    // var listings = new RentMyRobot.Collections.Listings();
+    // listings.fetch();
+    RentMyRobot.Collections.robots.fetch();
+
+    var view = new RentMyRobot.Views.SearchShow({
+      collection: RentMyRobot.Collections.robots //qqq do I need to do a fetch here?
+    });
+    this._swapView(view);
+  },
   //
   // eventsMapShow: function () {
   //   var listings = new RentMyRobot.Collections.Listings();
@@ -60,17 +63,7 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
   //   });
   //   this._swapView(view);
   // },
-  //
-  // searchShow: function () {
-  //   debugger
-  //   var listings = new RentMyRobot.Collections.Listings();
-  //   listings.fetch();
-  //   var view = new RentMyRobot.Views.SearchShow({
-  //     collection: listings
-  //   });
-  //   this._swapView(view);
-  // },
-  //
+
 
 
   _swapView: function (view) {

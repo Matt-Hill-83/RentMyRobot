@@ -1,0 +1,29 @@
+<div class="sidebar-info">
+  <h3>Listings</h3>
+  <hr>
+  <p>
+    These are the available listings. You can:
+  </p>
+  <ul>
+    <li>Click on the map to add listings</li>
+    <li>Hover over listing names to animate markers</li>
+    <li>Click on listing names to pan</li>
+    <li>Click on markers to show info windows</li>
+    <li>Click (remove) to destroy listings</li>
+  </ul>
+</div>
+<ul class="listings">
+
+
+
+<% listings.each(function (listing) { %>
+  <li class="listing">
+    <a href="javascript:void(0)" class="listing-name" data-listing-id="<%= listing.id %>">
+      <%= listing.get('name') %>
+    </a>
+    <a href="javascript:void(0)" class="remove-listing" data-listing-id="<%= listing.id %>">
+      (remove)
+    </a>
+  </li>
+<% }); %>
+</ul>
