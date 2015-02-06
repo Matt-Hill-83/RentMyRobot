@@ -6,10 +6,9 @@ RentMyRobot.Views.MarkerMapShow = Backbone.View.extend({
 
   initialize: function () {
     this._markers = {};
-    this.listenTo(this.collection, 'add remove sync', this.render); //qqq test
 
-    // this.listenTo(this.collection, 'add', this.addMarker);
-    // this.listenTo(this.collection, 'remove', this.removeMarker);
+    this.listenTo(this.collection, 'add', this.addMarker);
+    this.listenTo(this.collection, 'remove', this.removeMarker);
   },
 
   render: function () {
@@ -24,33 +23,33 @@ RentMyRobot.Views.MarkerMapShow = Backbone.View.extend({
   },
 
   // Event handlers
-  addMarker: function (robot) {
-    if (this._markers[robot.id]) { return };
+  addMarker: function (listing) {
+    if (this._markers[listing.id]) { return };
     var view = this;
 
     var latLng = new google.maps.LatLng(
-      robot.get('lat'),
-      robot.get('lng')
+      listing.get('lat'),
+      listing.get('lng')
     );
 
     var marker = new google.maps.Marker({
       animation: google.maps.Animation.DROP,
       position: latLng,
       map: this._map,
-      title: robot.get('name')
+      title: listing.get('name')
     });
 
     google.maps.event.addListener(marker, 'click', function (event) {
       view.showMarkerInfo(event, marker);
     });
 
-    this._markers[robot.id] = marker;
+    this._markers[listing.id] = marker;
   },
 
-  removeMarker: function (robot) {
-    var marker = this._markers[robot.id];
+  removeMarker: function (listing) {
+    var marker = this._markers[listing.id];
     marker.setMap(null);
-    delete this._markers[robot.id];
+    delete this._markers[listing.id];
   },
 
   showMarkerInfo: function (event, marker) {
