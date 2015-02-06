@@ -1,3 +1,3 @@
-GoogleMapsDemo.Models.Listing = Backbone.Model.extend({
-  urlRoot: 'api/listings'
-});
+// GoogleMapsDemo.Models.Listing = Backbone.Model.extend({
+//   urlRoot: 'api/listings'
+// });

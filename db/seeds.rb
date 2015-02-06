@@ -2,7 +2,9 @@ def create_robot!(i)
   Robot.create!(
     name: 'robot' + i.to_s,
     manufacturer: 'Roboco',
-    image_url: "robot" + i.to_s + ".png"
+    image_url: "robot" + i.to_s + ".png",
+    lat: rand() * 0.001 + 37.7822,
+    long: rand() * 0.001 + -122.4167,
   )
 end
 

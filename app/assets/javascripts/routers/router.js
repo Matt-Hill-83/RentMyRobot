@@ -45,14 +45,12 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     this._swapView(view);
   },
 
-  // markerMapShow: function () {
-  //   var listings = new RentMyRobot.Collections.Listings();
-  //   listings.fetch();
-  //   var view = new RentMyRobot.Views.MarkerMapShow({
-  //     collection: listings
-  //   });
-  //   this._swapView(view);
-  // },
+  markerMapShow: function () {
+    var view = new RentMyRobot.Views.MarkerMapShow({
+      collection: RentMyRobot.Collections.robots
+    });
+    this._swapView(view);
+  },
   //
   // eventsMapShow: function () {
   //   var listings = new RentMyRobot.Collections.Listings();
