@@ -6,6 +6,7 @@ RentMyRobot.Views.MarkerMapShow = Backbone.View.extend({
 
   initialize: function () {
     this._markers = {};
+    this.listenTo(this.collection, 'add remove sync', this.render); //qqq test
 
     // this.listenTo(this.collection, 'add', this.addMarker);
     // this.listenTo(this.collection, 'remove', this.removeMarker);
