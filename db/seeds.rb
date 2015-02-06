@@ -8,12 +8,12 @@ def create_robot!(i)
   )
 end
 
-def create_comment!(i)
+def create_comment!(robotNumber, commentNumber)
   Comment.create!(
-    user_id: 1,
-    robot_id: 5,
-    title: 'Comment ' + i.to_s,
-    body: 'Body ' + i.to_s,
+    user_id: 0,
+    robot_id: robotNumber,
+    title: 'Comment ' + commentNumber.to_s,
+    body: 'Body ' + commentNumber.to_s,
   )
 end
 
@@ -25,6 +25,6 @@ numRobots.times do |robotNumber|
   create_robot!(robotNumber)
 
   numComments.times do |commentNumber|
-    create_comment!(commentNumber)
+    create_comment!(robotNumber, commentNumber)
   end
 end
