@@ -11,8 +11,9 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
 
     //uncomment this --------
     // this.mapView = new RentMyRobot.Views.EventMapShow({
-    //   collection: this.collection
-    // });
+    this.mapView = new RentMyRobot.Views.MarkerMapShow({
+      collection: this.collection
+    });
     //uncomment this --------
   },
 
@@ -51,8 +52,8 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
     var content = this.template();
     this.$el.html(content);
     this.$('.sidebar').html(this.listingsIndex.render().$el);
-    // this.$('.map').html(this.mapView.$el);
-    // this.mapView.render();
+    this.$('.map').html(this.mapView.$el);
+    this.mapView.render();
     return this;
   },
 

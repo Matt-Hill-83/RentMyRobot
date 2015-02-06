@@ -38,6 +38,8 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
   },
 
   markerMapShow: function () {
+    // RentMyRobot.Collections.robots.fetch(); //qqq do I need this?
+
     var view = new RentMyRobot.Views.MarkerMapShow({
       collection: RentMyRobot.Collections.robots
     });
