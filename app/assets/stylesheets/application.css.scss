@@ -20,6 +20,18 @@
  //map in an empty <div>, it may not show up (since the <div> has collapsed itself). I
  //have the following lines in my application.css to make sure the map shows up.
 
+
+ #index {
+   float: left;
+   width: 50%;
+ }
+
+ #map-canvas2 {
+   float: left;
+   width: 50%;
+ }
+
+
  html, body, #map-canvas {
    height: 500px;
    margin: 0;

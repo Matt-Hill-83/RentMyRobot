@@ -2,7 +2,7 @@ RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
   template: JST['robots/index'],
 
   className: 'robots-index', // gets assigned to $el, which is a div by default
-  tagName: 'ul', //changes the default div to a ul
+  // tagName: 'ul', //changes the default div to a ul
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
@@ -17,14 +17,17 @@ RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
     map = new RentMyRobot.Views.MarkerMapShow({
       collection: RentMyRobot.Collections.robots
     });
-    this.$el.html(map.$el);
+    // this.$el.html(map.$el);
+    this.$el.find('#map-canvas2').html(map.$el);
     map.render();
 
 
     var that = this;
     this.collection.each(function (robot) {
       var view = new RentMyRobot.Views.RobotIndexElement({ model: robot });
-      that.$el.append(view.render().$el);
+      // that.$el.append(view.render().$el);
+      that.$el.find('#list-of-robots').append(view.render().$el);
+      // that.$el.find('#index').html(map.$el);
     });
     return this;
   }
