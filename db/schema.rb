@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150205232123) do
+ActiveRecord::Schema.define(version: 20150206002919) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20150205232123) do
   create_table "comments", force: true do |t|
     t.integer  "user_id",    null: false
     t.integer  "robot_id",   null: false
-    t.integer  "title",      null: false
-    t.integer  "body",       null: false
+    t.string   "title",      null: false
+    t.string   "body",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(version: 20150205232123) do
     t.string   "video_url"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lat"
-    t.integer  "long"
+    t.float    "lat"
+    t.float    "long"
   end
 
   create_table "users", force: true do |t|
