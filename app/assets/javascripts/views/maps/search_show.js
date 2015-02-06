@@ -16,7 +16,6 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
     // this.mapView = new RentMyRobot.Views.EventMapShow({
     RentMyRobot.Collections.robots.fetch();
     //qqq how do I get this to happen after the fetch is complete?
-    debugger
     this.mapView = new RentMyRobot.Views.MarkerMapShow({
       collection: RentMyRobot.Collections.robots //qqq do I need to do a fetch here?
       // collection: this.collection

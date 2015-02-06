@@ -30,7 +30,7 @@ RentMyRobot.Views.MarkerMapShow = Backbone.View.extend({
 
     var latLng = new google.maps.LatLng(
       robot.get('lat'),
-      robot.get('long')
+      robot.get('lng')
     );
 
     var marker = new google.maps.Marker({
