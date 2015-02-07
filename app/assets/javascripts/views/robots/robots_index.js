@@ -9,9 +9,26 @@ RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
     $('body').css('background-color', 'rgb(255, 255, 255)')
   },
 
+  priceSlider: function () {
+  this.$( '#slider-range' ).slider({
+    min: 0,
+    max: 1000,
+    range: true
+    // values: this.userRange,
+    //  slide: this.updateRange.bind(this),
+    //  stop: this.priceQuery.bind(this)
+  });
+},
+
   render: function () {
+
+    //test
+    // this.priceSlider();
+
+
     var content = this.template();
     this.$el.html(content);
+    $( "#slider-range" ).slider();
 
     // add Google Map
     map = new RentMyRobot.Views.MarkerMapShow({
