@@ -5,21 +5,32 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
-    this.listenTo(this.collection, 'sync', this.addTest);
+    this.addSidebar();
   },
 
+  //
+  // addTest: function () {
+  //   testView = new RentMyRobot.Views.TestView({
+  //     collection: RentMyRobot.Collections.robots
+  //     // mycontent: 'Zippy Dippy Doo!'
+  //   });
+  //   this.addSubview('#sidebar-container', testView);
+  // },
 
-  addTest: function () {
-    testView = new RentMyRobot.Views.TestView({
+  addSidebar: function () {
+    sideBarView = new RentMyRobot.Views.SideBar({
       collection: RentMyRobot.Collections.robots
-      // mycontent: 'Zippy Dippy Doo!'
     });
-    this.addSubview('#sidebar-container', testView);
+    this.addSubview('sidebar-container', sideBarView);
   },
 
 
   render: function () {
-    var content = this.template(); // grab the template
+    debugger
+    var content = this.template({
+      collection: RentMyRobot.Collections.robots
+    } ); // grab the template
+    
     this.$el.html(content); // stick the template content into this view's $el
     this.attachSubviews();
     return this;
