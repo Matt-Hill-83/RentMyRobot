@@ -1,4 +1,4 @@
-RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
+RentMyRobot.Views.RobotsIndex = Backbone.CompositeView.extend({
   template: JST['robots/index'],
 
   className: 'robots-index', // gets assigned to $el, which is a div by default
@@ -6,18 +6,26 @@ RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
-    $('body').css('background-color', 'rgb(255, 255, 255)')
+    this.listenTo(this.collection, 'sync', this.addTest);
+    // $('body').css('background-color', 'rgb(255, 255, 255)')
+    this.addTest();
   },
 
-
+  addTest: function () {
+    testView = new RentMyRobot.Views.TestView({
+      collection: RentMyRobot.Collections.robots
+      // mycontent: 'Zippy Dippy Doo!'
+    });
+    this.addSubview('#test-container-target', testView);
+  },
 
   render: function () {
 
     var content = this.template(); // grab the template
     this.$el.html(content); // stick the template content into this view's $el
 
-    // $( "#slider-range" ).slider();
-
+    // add slider
+    // fixme: put this in it's own view of filter controls
     $( "#slider-range" ).slider({
       range: true,
       min: 0,
@@ -53,7 +61,7 @@ RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
       var view = new RentMyRobot.Views.RobotIndexElement({ model: robot });
       that.$el.find('#list-of-robots').append(view.render().$el);
     });
-
+    this.attachSubviews();
     return this;
   }
 });

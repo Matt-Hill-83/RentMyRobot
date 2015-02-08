@@ -17,7 +17,6 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     var view = new RentMyRobot.Views.RobotsIndex({
       collection: RentMyRobot.Collections.robots
     });
-
     this._swapView(view);
   },
 
