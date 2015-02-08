@@ -9,10 +9,10 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    var content = this.template(); // grab the template
+    var content = this.template({
+      collection: RentMyRobot.Collections.robots
+    }); // grab the template
     this.$el.html(content); // stick the template content into this view's $el
-    debugger
-    // this.attachSubviews();
     return this;
   }
 });
