@@ -4,7 +4,7 @@ RentMyRobot.Views.TestView = Backbone.CompositeView.extend({
   template: JST['robots/test'],
 
   initialize: function() {
-    // this.listenTo(this.model, 'sync', this.render);
+    this.listenTo(this.collection, 'sync', this.render);
   },
 
   render: function() {

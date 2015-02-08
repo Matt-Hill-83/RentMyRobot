@@ -29,12 +29,12 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     this._swapView(view);
   },
 
-  ////////////////new stuff
-
-  basicMapShow: function () {
-    var view = new RentMyRobot.Views.BasicMapShow();
-    this._swapView(view);
-  },
+  // ////////////////new stuff
+  //
+  // basicMapShow: function () {
+  //   var view = new RentMyRobot.Views.BasicMapShow();
+  //   this._swapView(view);
+  // },
 
   markerMapShow: function () {
     // RentMyRobot.Collections.robots.fetch(); //qqq do I need this?
