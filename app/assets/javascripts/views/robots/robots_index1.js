@@ -1,5 +1,5 @@
 RentMyRobot.Views.RobotsIndex1 = Backbone.CompositeView.extend({
-  template: JST['robots/index-1'],
+  template: JST['robots/robot_list_1'],
 
   className: 'robots-index1', // gets assigned to $el, which is a div by default
   // tagName: 'ul', //changes the default div to a ul

@@ -1,19 +1,20 @@
-RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
-  template: JST['main/sidebar'],
+RentMyRobot.Views.RobotsIndex = Backbone.CompositeView.extend({
+  template: JST['robots/robot_list_1'],
 
-  className: 'sidebar-class', // gets assigned to $el, which is a div by default
+  // className: 'sidebar-class', // gets assigned to $el, which is a div by default
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render); //qqq do I need this at this conatiner level?
-    this.addRobotsIndex();
+    collection.each(this.addRobotItem.bind(this));
+
   },
 
 
-  addRobotsIndex: function () {
-      robotListView = new RentMyRobot.Views.RobotsIndex1({
+  addRobotItem: function () {
+    robotListView = new RentMyRobot.Views.RobotIndexItem({
       collection: this.collection // qqq should I define the collection explicitly here?
     });
-    this.addSubview('#robot-list-container', robotListView);
+    this.addSubview('#robot-list', robotListView);
   },
 
   render: function () {
@@ -21,7 +22,6 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
       collection: RentMyRobot.Collections.robots
     }); // grab the template
     this.$el.html(content); // stick the template content into this view's $el
-    this.attachSubviews();
     return this;
   }
 });

@@ -8,15 +8,6 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
     this.addSidebar();
   },
 
-  //
-  // addTest: function () {
-  //   testView = new RentMyRobot.Views.TestView({
-  //     collection: RentMyRobot.Collections.robots
-  //     // mycontent: 'Zippy Dippy Doo!'
-  //   });
-  //   this.addSubview('#sidebar-container', testView);
-  // },
-
   addSidebar: function () {
     sideBarView = new RentMyRobot.Views.SideBar({
       collection: RentMyRobot.Collections.robots
