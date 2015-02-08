@@ -12,11 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
+
 //= require jquery.ui.slider
+
 //= require underscore
 //= require backbone
 //= require bootstrap
+
 //= require rent_my_robot
+
 //= require_tree ../templates
 //= require_tree ./utils
 //= require_tree ./models

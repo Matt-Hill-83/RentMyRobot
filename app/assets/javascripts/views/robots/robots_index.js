@@ -13,10 +13,10 @@ RentMyRobot.Views.RobotsIndex = Backbone.View.extend({
 
   render: function () {
 
-    var content = this.template();
-    this.$el.html(content);
+    var content = this.template(); // grab the template
+    this.$el.html(content); // stick the template content into this view's $el
 
-    $( "#slider-range" ).slider();
+    // $( "#slider-range" ).slider();
 
     $( "#slider-range" ).slider({
       range: true,

@@ -3,7 +3,7 @@ window.RentMyRobot = {
   Collections: {},
   Views: {},
   Routers: {},
-  Utils: {},
+  // Utils: {},
 
   initialize: function() {
     new RentMyRobot.Routers.Router
