@@ -4,7 +4,7 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
   },
 
   routes: {
-    '': 'robotsIndex',
+    '': 'main',
     'robots/:id': 'robotShow',
     'basic': 'basicMapShow',
     'markers': 'markerMapShow',
@@ -15,6 +15,14 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
   robotsIndex: function () {
     RentMyRobot.Collections.robots.fetch();
     var view = new RentMyRobot.Views.RobotsIndex({
+      collection: RentMyRobot.Collections.robots
+    });
+    this._swapView(view);
+  },
+
+  main: function () {
+    RentMyRobot.Collections.robots.fetch();
+    var view = new RentMyRobot.Views.Main({
       collection: RentMyRobot.Collections.robots
     });
     this._swapView(view);

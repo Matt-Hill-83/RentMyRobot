@@ -9,7 +9,6 @@ RentMyRobot.Views.TestView = Backbone.CompositeView.extend({
 
   render: function() {
     var content = this.template({
-      // collection: 'ducks'
       collection: RentMyRobot.Collections.robots
     });
     this.$el.html(content);
