@@ -1,6 +1,6 @@
 RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
   template: JST['robots/robot_item_1'],
-  tagName: 'li',
+  // tagName: 'li',
 
   // className: 'sidebar-class', // gets assigned to $el, which is a div by default
 
@@ -12,7 +12,6 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
     var content = this.template({
       collection: RentMyRobot.Collections.robots
     });
-    debugger
     this.$el.html(content);
     return this;
   }

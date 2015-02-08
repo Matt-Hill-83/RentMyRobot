@@ -14,7 +14,7 @@ RentMyRobot.Views.RobotsList1 = Backbone.CompositeView.extend({
     collection: RentMyRobot.Collections.robots
 
     });
-    this.addSubview('#robot-list', robotListView);
+    this.addSubview('#test-container', robotListView); // container must be inside this template
   },
 
   render: function () {
@@ -25,10 +25,9 @@ RentMyRobot.Views.RobotsList1 = Backbone.CompositeView.extend({
     });
     var content = this.template({
       collection: RentMyRobot.Collections.robots
-    }); // grab the template
-    this.$el.html(content); // stick the template content into this view's $el
+    });
+    this.$el.html(content);
     this.attachSubviews();
-    
     return this;
   }
 });
