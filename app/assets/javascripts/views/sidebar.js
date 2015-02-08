@@ -10,8 +10,10 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
 
 
   addRobotsIndex: function () {
-      robotListView = new RentMyRobot.Views.RobotsIndex1({
-      collection: this.collection // qqq should I define the collection explicitly here?
+      robotListView = new RentMyRobot.Views.RobotsList1({
+      collection: RentMyRobot.Collections.robots
+
+      // collection: this.collection // qqq should I define the collection explicitly here?
     });
     this.addSubview('#robot-list-container', robotListView);
   },
