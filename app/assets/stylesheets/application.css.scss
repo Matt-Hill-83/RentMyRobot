@@ -32,22 +32,26 @@
    width: 50%;
  }
 
- //show view
+//main
+ #inner-wrapper {
+   float: left;
+  //  width: 50%;
+   background-color: bisque;
 
- // #video {
- //   float: left;
- //   width: 50%;
- // }
- //
- // #details {
- //   float: left;
- //   width: 50%;
- // }
- //
- // #show_image_div {
- //   float: left;
- //   width: 50%;
- // }
+ }
+
+ #sidebar-container {
+   float: left;
+   width: 50%;
+   background-color: red;
+ }
+
+ #map-container {
+   float: left;
+   width: 50%;
+   background-color: blue;
+ }
+
 
 
 
