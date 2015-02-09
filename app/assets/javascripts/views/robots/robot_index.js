@@ -1,4 +1,4 @@
-RentMyRobot.Views.RobotsList1 = Backbone.CompositeView.extend({
+RentMyRobot.Views.RobotList = Backbone.CompositeView.extend({
   template: JST['robots/robot_index'],
 
   initialize: function () {

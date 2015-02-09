@@ -7,7 +7,6 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
     this.listenTo(this.model, 'sync', this.render);
   },
 
-
   render: function () {
     if (!this.model.get('name')){ //qqq why am I checking for the name?
       return this;
@@ -26,10 +25,6 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
           that.$el.append(view.render().$el);
         });
      }
-
-
-      return this;
+    return this;
   },
-
-
 });

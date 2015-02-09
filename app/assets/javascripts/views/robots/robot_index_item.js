@@ -11,7 +11,7 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
   render: function () {
     var content = this.template({
       collection: RentMyRobot.Collections.robots,
-      robot: RentMyRobot.Collections.robots.get(1)
+      robot: RentMyRobot.Collections.robots.get(1) // fixme: pass in a single robot
     });
 
     this.$el.html(content);
