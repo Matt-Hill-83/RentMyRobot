@@ -17,7 +17,7 @@ def create_comment!(robotNumber, commentNumber)
   )
 end
 
-numRobots = 6
+numRobots = 20
 numComments = 5
 
 

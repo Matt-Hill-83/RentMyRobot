@@ -1,6 +1,5 @@
 RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
   template: JST['robots/robot_index_item'],
-  // tagName: 'li',
 
   className: 'robot-index-element-div', // gets assigned to $el, which is a div by default
 
@@ -9,9 +8,13 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
   },
 
   render: function () {
+      // var that = this;
+      // debugger
     var content = this.template({
-      collection: RentMyRobot.Collections.robots,
-      robot: RentMyRobot.Collections.robots.get(1) // fixme: pass in a single robot
+      collection: this.collection,
+      // collection: RentMyRobot.Collections.robots,
+      // robot: RentMyRobot.Collections.robots.get(1) // fixme: pass in a single robot
+      robot: this.model
     });
 
     this.$el.html(content);
