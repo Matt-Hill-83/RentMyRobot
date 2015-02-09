@@ -4,16 +4,15 @@
   <h7 row><center>Robot Item</center></h7>
 </div> -->
 
-<div class='robot_index_element_div row'>
-    <div class="robot_index_element_image_div col-sm-12">
+    <div class="robot_index_element_image_div">
       <a href="#/robots/<%= robot.id %>">
         <img src="assets/<%= robot.escape('image_url') %>"
             height=200px
             alt="Picture your robot here1!"
-            class="splash_image col-sm-12">
+            class="splash_image">
       </a>
     </div>
-    <div class='robot_image_caption col-sm-12'>
+    <div class='robot_image_caption'>
       <center><%= robot.escape('name') %></center>
       <!-- robot id: <%= robot.id %> -->
     </div>
@@ -26,5 +25,3 @@
       <br>
     <% } %>
   </div> -->
-
-</div>

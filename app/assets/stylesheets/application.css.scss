@@ -24,53 +24,44 @@
 //index view
  #index {
    float: left;
-  //  width: 50%;
  }
 
 //main
  #container1 {
-  //  float: left;
-  //  width: 50%;
    background-color: bisque;
  }
 
+ .robot-index-element-div {
+  display: inline-block;
+ }
+
  #container2 {
-  //  float: left;
-  //  width: 50%;
    background-color: ghostwhite;
  }
 
  #map-container {
-  //  float: left;
-  //  width: 50%;
    padding: 0px;
    background-color: pink;
  }
 
  #sidebar-container {
    padding: 0px;
-  //  float: left;
-  //  width: 50%;
    background-color: red;
  }
 
  #robot-list-container {
    padding: 0px;
    float: left;
-  //  width: 50%;
    background-color: yellow;
   //  margin: 50px;
  }
 
  #robots-list {
-  //  float: left;
-  //  width: 50%;
    background-color: yellow;
  }
 
  #robot-item-container {
    float: left;
-  //  width: 50%;
    background-color: pink;
  }
 
@@ -82,25 +73,21 @@
 
  #slider-container {
    float: top;
-  //  width: 50%;
    background-color: orange;
  }
 
  #check-boxes-container {
    float: top;
-  //  width: 50%;
    background-color: green;
  }
 
  #checkboxes-left {
    float: left;
-  //  width: 50%;
    background-color: coral;
  }
 
  #checkboxes-right {
    float: left;
-  //  width: 50%;
    background-color: cornflowerblue;
  }
 
@@ -138,12 +125,12 @@
  //   position: relative;
  // }
 
- .map {
-   height: 100%;
-   left: 0;
-   position: absolute;
-   width: 60%;
- }
+ // .map {
+ //   height: 100%;
+ //   left: 0;
+ //   position: absolute;
+ //   width: 60%;
+ // }
  //
  // .sidebar {
  //   border-left: thin solid black;
