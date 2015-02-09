@@ -14,7 +14,7 @@ RentMyRobot.Views.RobotsList1 = Backbone.CompositeView.extend({
     collection: RentMyRobot.Collections.robots
 
     });
-    this.addSubview('#test-container', robotListView); // container must be inside this template
+    this.addSubview('#robot-item-container', robotListView); // container must be inside this template
   },
 
   render: function () {
