@@ -24,77 +24,71 @@
 //index view
  #index {
    float: left;
-   width: 50%;
- }
-
- #map-canvas2 {
-   float: left;
-   width: 50%;
+  //  width: 50%;
  }
 
 //main
- #inner-wrapper {
+ #container1 {
   //  float: left;
   //  width: 50%;
    background-color: bisque;
+ }
 
+ #container2 {
+  //  float: left;
+  //  width: 50%;
+   background-color: orange;
+ }
+
+ #map-container {
+  //  float: left;
+  //  width: 50%;
+   background-color: blue;
  }
 
  #sidebar-container {
-   float: left;
-   width: 50%;
+  //  float: left;
+  //  width: 50%;
    background-color: red;
- }
-
- #robots-list {
-   float: left;
-   width: 50%;
-   background-color: yellow;
  }
 
  #robot-list-container {
    float: left;
-   width: 50%;
+  //  width: 50%;
    background-color: yellow;
-   margin: 50px;
+  //  margin: 50px;
  }
 
- #map-container {
+ #robots-list {
    float: left;
-   width: 50%;
-   background-color: blue;
+  //  width: 50%;
+   background-color: yellow;
  }
 
  #robot-item-container {
    float: left;
-   width: 50%;
+  //  width: 50%;
    background-color: pink;
  }
 
 
  #filters-container {
+   float: top;
    background-color: brown;
  }
 
  #slider-container {
-   float: left;
-   width: 50%;
+   float: top;
+  //  width: 50%;
    background-color: orange;
  }
 
  #check-boxes-container {
    float: left;
-   width: 50%;
+  //  width: 50%;
    background-color: green;
  }
 
-
-
-
-
-
-
-// sfdsfdsafsfafasfsdafsfsaffsad
 
 
  html, body, #map-canvas {
@@ -102,6 +96,13 @@
    margin: 0;
    padding: 0;
  }
+
+
+
+
+
+// sfdsfdsafsfafasfsdafsfsaffsad
+
  //
  //
  // * {

@@ -8,24 +8,26 @@
 --------------------------------
 <br>
 
-<div id="inner-wrapper" row>
-  <h1 class="header_div">Rent My Robot Index</h1>
+<div id="container1" class="container">
+  <div id="container2" class="row">
+    <h1>Rent My Robot Index</h1>
 
-  <h7>collection list in index start</h7>
-  <br>
-  length:
-  <%= collection.models.length %>
-  <br>
+    <!-- <h7>collection list in index start</h7>
+    <br>
+    length:
+    <%= collection.models.length %>
+    <br>
 
-  <% if (collection.models.length > 0 ) { %>
-    <%= collection.models[0].attributes.name %>
-  <% } %>
-  <%= collection.models.length > 0 && collection.models[0].attributes.name %>
-  <br>
-  <h7>collection list in index stop</h7>
-  <br>
+    <% if (collection.models.length > 0 ) { %>
+      <%= collection.models[0].attributes.name %>
+    <% } %>
+    <%= collection.models.length > 0 && collection.models[0].attributes.name %>
+    <br>
+    <h7>collection list in index stop</h7>
+    <br> -->
 
 
-  <div id="map-container"></div>
-  <div id="sidebar-container" </div>
+    <div id="map-container" class="col-sm-6"></div>
+    <div id="sidebar-container" class="col-sm-6"></div>
+  </div>
 </div>

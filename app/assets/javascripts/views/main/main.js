@@ -2,6 +2,7 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
   template: JST['robots/main'],
 
   className: 'main-class', // gets assigned to $el, which is a div by default
+  id: 'main-div',
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
