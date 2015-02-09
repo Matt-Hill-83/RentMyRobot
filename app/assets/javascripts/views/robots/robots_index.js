@@ -12,14 +12,14 @@ RentMyRobot.Views.RobotsIndex = Backbone.CompositeView.extend({
     // this.collection.each(this.addBike.bind(this));
 
   },
-
-  addTest: function () {
-    testView = new RentMyRobot.Views.TestView({
-      collection: RentMyRobot.Collections.robots
-      // mycontent: 'Zippy Dippy Doo!'
-    });
-    this.addSubview('#test-container-target', testView);
-  },
+  // 
+  // addTest: function () {
+  //   testView = new RentMyRobot.Views.TestView({
+  //     collection: RentMyRobot.Collections.robots
+  //     // mycontent: 'Zippy Dippy Doo!'
+  //   });
+  //   this.addSubview('#test-container-target', testView);
+  // },
 
   render: function () {
 

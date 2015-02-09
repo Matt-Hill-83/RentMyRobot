@@ -50,6 +50,7 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     var view = new RentMyRobot.Views.MarkerMapShow({
       collection: RentMyRobot.Collections.robots
     });
+    debugger
     this._swapView(view);
   },
 

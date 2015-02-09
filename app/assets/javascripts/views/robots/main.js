@@ -6,6 +6,7 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
     this.addSidebar();
+    this.addMap();
   },
 
   addSidebar: function () {
@@ -16,13 +17,42 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
   },
 
 
+  addMap: function () {
+
+    mapView = new RentMyRobot.Views.MarkerMapShow({
+      collection: RentMyRobot.Collections.robots
+    });
+    // debugger
+    // this.addSubview('#map-container', mapView);
+  },
+    //
+    // // this.$el.html(map.$el);
+    // this.$el.find('#map-canvas2').html(map.$el);
+    // map.render();
+
   render: function () {
+
+
     var content = this.template({
       collection: RentMyRobot.Collections.robots
     } ); // grab the template
 
     this.$el.html(content); // stick the template content into this view's $el
     this.attachSubviews();
+
+
+
+
+
+    // add Google Map
+    map = new RentMyRobot.Views.MarkerMapShow({
+      collection: RentMyRobot.Collections.robots
+    });
+    // this.$el.html(map.$el);
+    debugger
+    this.$el.find('#map-container').html(map.$el);
+    map.render();
+
     return this;
   }
 });
