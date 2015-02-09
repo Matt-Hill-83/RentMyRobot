@@ -10,8 +10,10 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
 
   render: function () {
     var content = this.template({
-      collection: RentMyRobot.Collections.robots
+      collection: RentMyRobot.Collections.robots,
+      robot: RentMyRobot.Collections.robots.get(1)
     });
+
     this.$el.html(content);
     return this;
   }
