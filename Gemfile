@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'backbone-on-rails'
-gem 'bootstrap-sass'
 
 gem 'backbone-on-rails'
 gem 'bcrypt'

@@ -2,11 +2,10 @@ RentMyRobot.Views.Slider = Backbone.CompositeView.extend({
   template: JST['main/slider'],
 
   initialize: function () {
-    this.listenTo(this.collection, 'sync', this.render); //qqq do I need this at this conatiner level?
+    this.listenTo(this.collection, 'sync', this.render);
   },
 
   setupSlider: function () {
-    // add slider
     $( "#slider-range" ).slider({
       range: true,
       min: 0,
