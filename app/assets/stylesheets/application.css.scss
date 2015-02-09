@@ -43,6 +43,7 @@
  #map-container {
   //  float: left;
   //  width: 50%;
+   padding: 0px;
    background-color: blue;
  }
 
@@ -60,7 +61,7 @@
  }
 
  #robots-list {
-   float: left;
+  //  float: left;
   //  width: 50%;
    background-color: yellow;
  }
@@ -84,9 +85,21 @@
  }
 
  #check-boxes-container {
-   float: left;
+   float: top;
   //  width: 50%;
    background-color: green;
+ }
+
+ #checkboxes-left {
+   float: left;
+  //  width: 50%;
+   background-color: coral;
+ }
+
+ #checkboxes-right {
+   float: left;
+  //  width: 50%;
+   background-color: cornflowerblue;
  }
 
 
