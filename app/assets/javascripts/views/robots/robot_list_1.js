@@ -1,5 +1,5 @@
 RentMyRobot.Views.RobotsList1 = Backbone.CompositeView.extend({
-  template: JST['robots/robot_list_1'],
+  template: JST['robots/robot_index'],
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render); //qqq do I need this at this conatiner level?

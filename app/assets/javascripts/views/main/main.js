@@ -36,5 +36,23 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
     mapView.render();
 
     return this;
+
+    // add slider
+    // $( "#slider-range" ).slider({
+    //   range: true,
+    //   min: 0,
+    //   max: 500,
+    //   values: [ 75, 300 ],
+    //   slide: function( event, ui ) {
+    //     $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+    //   }
+    // });
+//
+// <p>
+//   <label for="amount">Price range:</label>
+//   <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+// </p>
+//
+// <div id="slider-range"></div>
   }
 });
