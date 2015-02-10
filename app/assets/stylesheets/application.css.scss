@@ -30,35 +30,29 @@
  #container1 {
    background-color: bisque;
  }
-
-
  .sidebar-class {
    background-color: yellow;
    float: top;
    margin: 0px;
    max-width: 645px;
  }
-
  .robot-index-element-wrapper {
   background-color: green;
   display: inline-block;
   margin: 15px;
   float: top;
  }
-
  .separator-bar {
   // color: green;
   border-color: #123455;
   background-color: #123455;
   color: #123455;
  }
-
 /////////////// robot index image element
  .robot-index-element-caption {
    background-color: red;
    float: top;
  }
-
  .robot-index-element-image-wrapper {
   background-color: cornflowerblue;
   display: inline-block;
@@ -67,12 +61,10 @@
   border-style: solid;
   border-width: 1px;
  }
-
  .robot-index-image {
    max-width: 110%;
    height: auto;
  }
-
  .robot-index-element-details {
    background-color: white;
    float: top;
@@ -86,119 +78,122 @@
     font-family: "Times New Roman", Georgia, Serif;
 
  }
- ///////////////
-
  /////////////// slider stuff
 
  .filter1a {
    background-color: pink;
    height: 100px;
-   width: 20%;
+   width: 15%;
    float: left;
+   padding: 10px;
  }
  .filter1b {
    background-color: darksalmon;
    height: 100px;
-   width: 80%;
+   width: 85%;
    float: left;
  }
  .filter2a {
    background-color: coral;
    height: 100px;
-   width: 20%;
+   width: 15%;
    float: left;
+   padding: 10px;
  }
  .filter2b {
    background-color: bisque;
    height: 100px;
-   width: 80%;
+   width: 85%;
    float: left;
  }
  .filter3a {
+   padding: 10px;
    background-color: coral;
    height: 100px;
-   width: 20%;
+   width: 15%;
    float: left;
  }
  .filter3b {
-   background-color: bisque;
+   background-color: yellow;
    height: 100px;
-   width: 80%;
+   width: 85%;
    float: left;
+   top: calc(50% - .4em);
+
  }
  .filter-label {
    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-   padding: 20px;
-  margin-top: 50%;
-  margin-bottom: 50%;
-  background-color: grey;
-  //  font-family: "Times New Roman", Georgia, Serif;
-
+  //  padding: 20px;
+   float: top;
+   vertical-align: middle;
  }
-
+ .separator-bar {
+   margin: 2px;
+ }
+ .filter-capsule {
+   margin-top: 0px;
+   margin-bottom: 0px;
+   float: top;
+ }
+ #slider-range {
+  top: calc(50% - .4em);
+ }
+ .slider-capsule {
+  //  margin-top: 40px;
+  //  margin-bottom: 20px;
+  //  vertical-align: middle;
+ }
  ///////////////
-
-
  #container2 {
    background-color: ghostwhite;
  }
-
  #map-container {
    padding: 0px;
    background-color: pink;
    max-width: 600px;
 
  }
-
  #sidebar-container {
    padding: 0px;
    background-color: red;
  }
-
  #robot-list-container {
    padding: 0px;
    float: left;
    background-color: yellow;
  }
-
  #robots-list {
    background-color: yellow;
  }
-
  #robot-item-container {
    float: left;
    background-color: #F5F5F5;
    padding: 0px;
  }
-
  #filters-container {
    float: top;
    background-color: white;
   //  padding: 15px;
  }
-
  #slider-container {
    float: top;
    background-color: orange;
    padding: 0px;
 
  }
-
  #check-boxes-container {
    float: top;
    background-color: green;
+   padding: 0px;
  }
-
  #checkboxes-left {
    float: left;
    background-color: coral;
  }
-
  #checkboxes-right {
    float: left;
    background-color: cornflowerblue;
  }
-
  html, body, #map-canvas {
    height: 500px;
    margin: 0;
