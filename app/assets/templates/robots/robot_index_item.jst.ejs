@@ -1,4 +1,4 @@
-    <div class="robot_index_element_image_div">
+    <div class="robot-index-element-image-div">
       <a href="#/robots/<%= robot.id %>">
         <img src="assets/<%= robot.escape('image_url') %>"
             height=200px
@@ -10,12 +10,3 @@
       <center><%= robot.escape('name') %></center>
       <!-- robot id: <%= robot.id %> -->
     </div>
-
-  <!-- <div class="robot_index_element_details_div col-sm-6">
-    <% for (var attr in robot.attributes) { %>
-        <% if (attr === "created_at" || attr === "updated_at") continue; %>
-        <span style="font-weight: bold;"><%= attr %>:</span>
-        <%= robot.get(attr) %>
-      <br>
-    <% } %>
-  </div> -->
