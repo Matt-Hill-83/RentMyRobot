@@ -1,7 +1,7 @@
 RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
   template: JST['main/sidebar'],
 
-  className: 'sidebar-class col-sm-12', // gets assigned to $el, which is a div by default
+  className: 'sidebar-class row', // gets assigned to $el, which is a div by default
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render); //qqq do I need this at this conatiner level?

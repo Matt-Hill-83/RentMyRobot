@@ -1,12 +1,18 @@
-    <div class="robot-index-element-image-div">
+    <div class='robot-index-element-caption'>
+      <center><%= robot.escape('name') %></center>
+    </div>
+
+    <div class="robot-index-element-image-wrapper">
       <a href="#/robots/<%= robot.id %>">
         <img src="assets/<%= robot.escape('image_url') %>"
-            height=200px
             alt="Picture your robot here1!"
             class="robot-index-image">
       </a>
     </div>
-    <div class='robot_image_caption'>
-      <center><%= robot.escape('name') %></center>
-      <!-- robot id: <%= robot.id %> -->
+
+    <div class='robot-index-element-details'>
+      <left>Location: <%= robot.escape('location') %></left><br>
+      <left>Manufacturer: <%= robot.escape('manufacturer') %></left><br>
+      <left>Price: <%= robot.escape('price') %></left><br>
+      <left>Type: <%= robot.escape('robot_type') %></left>
     </div>

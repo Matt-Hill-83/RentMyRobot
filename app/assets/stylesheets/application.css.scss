@@ -30,27 +30,35 @@
  #container1 {
    background-color: bisque;
  }
- //
- // .robot-index-element-div {
- //   display:block;
- //   width: 230px;
- //   height: 180px;
- //   position:relative;
- //   margin-left: auto;
- //   margin-right: auto;
- //   top:0;
- //   margin-top: 30px;
- //   margin-bottom: 40px;
- // }
 
 
+ .sidebar-class {
+   background-color: yellow;
+   float: top;
+   margin: 0px;
+ }
 
+/////////////// robot index image element
+ .robot-index-element-caption {
+   background-color: red;
+   float: top;
+ }
 
- .robot-index-element-div {
+ .robot-index-element-image-wrapper {
   background-color: cornflowerblue;
   display: inline-block;
   margin: 15px;
+  float: top;
  }
+
+ .robot-image-element-details {
+   background-color: white;
+   float: top;
+ }
+ ///////////////
+
+
+
 
  #container2 {
    background-color: ghostwhite;
@@ -84,6 +92,7 @@
  #filters-container {
    float: top;
    background-color: brown;
+   padding: 15px;
  }
 
  #slider-container {
