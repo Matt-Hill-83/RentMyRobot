@@ -6,9 +6,9 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
 
   events: {
     // 'click a.remove-listing': 'destroyListing',
-    'click div.robot-index-element-div': 'panToListing',  // qqq turn this into hover?
-    'mouseenter div.robot-index-element-div': 'startBounce',
-    'mouseleave div.robot-index-element-div': 'stopBounce'
+    'click div.robot-index-element-image-wrapper': 'panToListing',  // qqq turn this into hover?
+    'mouseenter div.robot-index-element-image-wrapper': 'startBounce',
+    'mouseleave div.robot-index-element-image-wrapper': 'stopBounce'
   },
 
 
