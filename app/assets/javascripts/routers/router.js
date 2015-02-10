@@ -33,48 +33,37 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     var view = new RentMyRobot.Views.RobotShow({
       model: robot
     });
-
     this._swapView(view);
   },
 
-  // ////////////////new stuff
-  //
   // basicMapShow: function () {
   //   var view = new RentMyRobot.Views.BasicMapShow();
   //   this._swapView(view);
   // },
 
   markerMapShow: function () {
-    // RentMyRobot.Collections.robots.fetch(); //qqq do I need this?
-
     var view = new RentMyRobot.Views.MarkerMapShow({
       collection: RentMyRobot.Collections.robots
     });
-    
     this._swapView(view);
   },
 
   searchShow: function () {
-    // var listings = new RentMyRobot.Collections.Listings();
-    // listings.fetch();
-    RentMyRobot.Collections.robots.fetch();  //qqq do I need to fetch here?
-
+    RentMyRobot.Collections.robots.fetch();
     var view = new RentMyRobot.Views.SearchShow({
-      collection: RentMyRobot.Collections.robots //qqq do I need to do a fetch here?
+      collection: RentMyRobot.Collections.robots
     });
     this._swapView(view);
   },
-  //
-  // eventsMapShow: function () {
-  //   var listings = new RentMyRobot.Collections.Listings();
-  //   listings.fetch();
-  //   var view = new RentMyRobot.Views.EventMapShow({
-  //     collection: listings
-  //   });
-  //   this._swapView(view);
-  // },
 
+  eventsMapShow: function () {
+    RentMyRobot.Collections.robots.fetch();
 
+    var view = new RentMyRobot.Views.EventMapShow({
+      collection: RentMyRobot.Collections.robots
+    });
+    this._swapView(view);
+  },
 
   _swapView: function (view) {
     this._currentView && this._currentView.remove();

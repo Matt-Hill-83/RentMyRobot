@@ -1,15 +1,9 @@
-
-
-<!-- <div row>
-  <h7 row><center>Robot Item</center></h7>
-</div> -->
-
-    <div class="robot_index_element_image_div">
+    <div class="robot_index_element_image_div" data-robot-id="<%= robot.id %>">
       <a href="#/robots/<%= robot.id %>">
         <img src="assets/<%= robot.escape('image_url') %>"
             height=200px
             alt="Picture your robot here1!"
-            class="splash_image">
+            class="robot-index-image">
       </a>
     </div>
     <div class='robot_image_caption'>
