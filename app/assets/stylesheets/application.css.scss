@@ -56,13 +56,12 @@
  .robot-index-element-image-wrapper {
   background-color: cornflowerblue;
   display: inline-block;
-  // margin: 15px;
   float: top;
   border-style: solid;
   border-width: 1px;
  }
  .robot-index-image {
-   max-width: 110%;
+   max-width: 100%;
    height: auto;
  }
  .robot-index-element-details {
@@ -80,42 +79,29 @@
  }
  /////////////// slider stuff
 
- .filter1a {
-   background-color: pink;
-   height: 100px;
-   width: 15%;
-   float: left;
-   padding: 10px;
- }
- .filter1b {
-   background-color: darksalmon;
-   height: 100px;
-   width: 85%;
-   float: left;
- }
  .filter2a {
    background-color: coral;
-   height: 100px;
+   height: 80;
    width: 15%;
    float: left;
    padding: 10px;
  }
  .filter2b {
    background-color: bisque;
-   height: 100px;
+   height: 80;
    width: 85%;
    float: left;
  }
  .filter3a {
+   height: 80px;
    padding: 10px;
    background-color: coral;
-   height: 100px;
    width: 15%;
    float: left;
  }
  .filter3b {
    background-color: yellow;
-   height: 100px;
+   height: 80px;
    width: 85%;
    float: left;
    top: calc(50% - .4em);
@@ -169,6 +155,8 @@
    float: left;
    background-color: #F5F5F5;
    padding: 0px;
+   border-top: 5px;
+   border-top: 1px solid #DDE0E0;
  }
  #filters-container {
    float: top;
