@@ -36,6 +36,7 @@
    background-color: yellow;
    float: top;
    margin: 0px;
+   max-width: 645px;
  }
 
  .robot-index-element-wrapper {
@@ -43,6 +44,13 @@
   display: inline-block;
   margin: 15px;
   float: top;
+ }
+
+ .separator-bar {
+  // color: green;
+  border-color: #123455;
+  background-color: #123455;
+  color: #123455;
  }
 
 /////////////// robot index image element
@@ -54,17 +62,81 @@
  .robot-index-element-image-wrapper {
   background-color: cornflowerblue;
   display: inline-block;
-  margin: 15px;
+  // margin: 15px;
   float: top;
+  border-style: solid;
+  border-width: 1px;
  }
 
- .robot-image-element-details {
+ .robot-index-image {
+   max-width: 110%;
+   height: auto;
+ }
+
+ .robot-index-element-details {
    background-color: white;
    float: top;
+   font-size: 16px;
+  //  overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    // font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Times New Roman", Georgia, Serif;
+
  }
  ///////////////
 
+ /////////////// slider stuff
 
+ .filter1a {
+   background-color: pink;
+   height: 100px;
+   width: 20%;
+   float: left;
+ }
+ .filter1b {
+   background-color: darksalmon;
+   height: 100px;
+   width: 80%;
+   float: left;
+ }
+ .filter2a {
+   background-color: coral;
+   height: 100px;
+   width: 20%;
+   float: left;
+ }
+ .filter2b {
+   background-color: bisque;
+   height: 100px;
+   width: 80%;
+   float: left;
+ }
+ .filter3a {
+   background-color: coral;
+   height: 100px;
+   width: 20%;
+   float: left;
+ }
+ .filter3b {
+   background-color: bisque;
+   height: 100px;
+   width: 80%;
+   float: left;
+ }
+ .filter-label {
+   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   padding: 20px;
+  margin-top: 50%;
+  margin-bottom: 50%;
+  background-color: grey;
+  //  font-family: "Times New Roman", Georgia, Serif;
+
+ }
+
+ ///////////////
 
 
  #container2 {
@@ -74,6 +146,8 @@
  #map-container {
    padding: 0px;
    background-color: pink;
+   max-width: 600px;
+
  }
 
  #sidebar-container {
@@ -93,19 +167,21 @@
 
  #robot-item-container {
    float: left;
-   background-color: pink;
+   background-color: #F5F5F5;
    padding: 0px;
  }
 
  #filters-container {
    float: top;
-   background-color: brown;
-   padding: 15px;
+   background-color: white;
+  //  padding: 15px;
  }
 
  #slider-container {
    float: top;
    background-color: orange;
+   padding: 0px;
+
  }
 
  #check-boxes-container {

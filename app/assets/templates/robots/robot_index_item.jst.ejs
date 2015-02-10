@@ -1,6 +1,6 @@
-    <div class='robot-index-element-caption'>
+    <!-- <div class='robot-index-element-caption'>
       <center><%= robot.escape('name') %></center>
-    </div>
+    </div> -->
 
     <div class="robot-index-element-image-wrapper">
       <a href="#/robots/<%= robot.id %>">
@@ -11,8 +11,9 @@
     </div>
 
     <div class='robot-index-element-details'>
+      <center><%= robot.escape('name') %></center>
       <left>Location: <%= robot.escape('location') %></left><br>
       <left>Manufacturer: <%= robot.escape('manufacturer') %></left><br>
-      <left>Price ($USD): <%= robot.escape('price') %></left><br>
+      <left>Price: $<%= robot.escape('price') %></left><br>
       <left>Type: <%= robot.escape('robot_type') %></left>
     </div>
