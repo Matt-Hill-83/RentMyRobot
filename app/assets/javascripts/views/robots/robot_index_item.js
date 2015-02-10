@@ -8,7 +8,7 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
 
   template: JST['robots/robot_index_item'],
 
-  className: 'robot-index-element-image-wrapper',
+  className: 'robot-index-element-wrapper',
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
