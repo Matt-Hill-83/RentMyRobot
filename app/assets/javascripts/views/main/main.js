@@ -6,9 +6,9 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
 
   events: {
     // 'click a.remove-listing': 'destroyListing',
-    'click a.listing-name': 'panToListing',
+    'click div.robot-index-element-div': 'panToListing',  // qqq turn this into hover?
     'mouseenter div.robot-index-element-div': 'startBounce',
-    'mouseleave a.listing-name': 'stopBounce'
+    'mouseleave div.robot-index-element-div': 'stopBounce'
   },
 
 
@@ -19,8 +19,13 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
 
 
   startBounce: function (event) {
-    console.log('test');
+    console.log('start bounce');
     this.mapView.startBounce(event);
+  },
+
+  stopBounce: function (event) {
+    console.log('stop bounce');
+    this.mapView.stopBounce(event);
   },
 
   addSidebar: function () {

@@ -23,7 +23,7 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
 
   // Event handlers
   startBounce: function (event) {
-    debugger
+
     var robotId = $(event.currentTarget).data('robot-id');
     this.mapView.startBounce(robotId);
   },
@@ -49,8 +49,7 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
     // Because we render the `mapView` here, we MUST NOT re-render this view.
     var content = this.template();
     this.$el.html(content);
-    // this.$('.sidebar').html(this.listingsIndex.render().$el);
-    this.$('.map').html(this.mapView.$el);
+    this.$('#map').html(this.mapView.$el);
     this.mapView.render();
     return this;
   },
