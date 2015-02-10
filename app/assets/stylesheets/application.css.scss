@@ -37,13 +37,12 @@
    max-width: 645px;
  }
  .robot-index-element-wrapper {
-  background-color: green;
+  background-color: red;
   display: inline-block;
   margin: 15px;
   float: top;
  }
  .separator-bar {
-  // color: green;
   border-color: #123455;
   background-color: #123455;
   color: #123455;
@@ -59,9 +58,11 @@
   float: top;
   border-style: solid;
   border-width: 1px;
+  // width: 190px;
  }
  .robot-index-image {
-   max-width: 100%;
+  //  max-width: 80%;
+  width: 190px;
    height: auto;
  }
  .robot-index-element-details {
@@ -91,7 +92,23 @@
    height: 80;
    width: 85%;
    float: left;
+   position: relative;
  }
+
+.filter2b.filter2b {
+  position: relative;
+  height: 60px;
+}
+
+.filter2b > .filter-capsule {
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  height: 60px;
+  width: 100%;
+  white-space: nowrap;
+}
+
  .filter3a {
    height: 80px;
    padding: 10px;
@@ -117,9 +134,9 @@
    margin: 2px;
  }
  .filter-capsule {
-   margin-top: 0px;
-   margin-bottom: 0px;
-   float: top;
+   height: auto;
+   min-height: 10px;
+   position: relative;
  }
  #slider-range {
   top: calc(50% - .4em);
@@ -142,6 +159,8 @@
  #sidebar-container {
    padding: 0px;
    background-color: red;
+   height: 800px;
+   overflow-y: scroll;
  }
  #robot-list-container {
    padding: 0px;
