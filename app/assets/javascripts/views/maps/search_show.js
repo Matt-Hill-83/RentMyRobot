@@ -23,6 +23,7 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
 
   // Event handlers
   startBounce: function (event) {
+    debugger
     var robotId = $(event.currentTarget).data('robot-id');
     this.mapView.startBounce(robotId);
   },
