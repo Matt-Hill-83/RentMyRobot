@@ -1,0 +1,42 @@
+
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+<h1 class="header_div"><%= robot.escape('name') %></h1>
+
+
+<button id='message-button' type="button" class="btn btn-primary" data-toggle="modal" data-target="#message-modal">Test Button</button>
+</div>
+
+<div id="show_container" row>
+
+  <div id="video" col-sm-4>
+    <video width="400" controls>
+      <source src="assets/mov_bbb.mp4" type="video/mp4">
+      <source src="assets/mov_bbb.ogg" type="video/ogg">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <div class="details" col-sm-4>
+    <% for (var attr in robot.attributes) { %>
+        <% if (attr === "created_at" || attr === "updated_at") continue; %>
+        <span style="font-weight: bold;"><%= attr %>:</span>
+        <%= robot.get(attr) %>
+      <br>
+    <% } %>
+  </div>
+
+  <div class="show_image_div" col-sm-4>
+    <img src="assets/<%= robot.escape('image_url') %>"
+        height=200px
+        alt="Picture your robot here1!"
+        class="robot-index-image">
+  </div>
+
+
+
+</div>
