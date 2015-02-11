@@ -18,7 +18,7 @@ def create_robot!(i)
                   Honda)
 
   video_urls = %w(wE3fmFTtP9g
-                chPanW0QWhA)
+                  chPanW0QWhA)
 
   Robot.create!(
     name: names[i%(names.length-1)],
