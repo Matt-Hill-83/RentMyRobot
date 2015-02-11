@@ -28,13 +28,22 @@
 
 //main
  #container1 {
-   background-color: bisque;
+   background-color: red;
+ }
+ #container2 {
+   background-color: red;
+ }
+ #sidebar-container {
+   padding: 0px;
+   background-color: white;
  }
  .sidebar-class {
    background-color: yellow;
    float: top;
    margin: 0px;
-   max-width: 645px;
+   height: 800px;
+   overflow-y: scroll;
+   max-width: 780px;
  }
  .robot-index-element-wrapper {
   background-color: red;
@@ -58,10 +67,8 @@
   float: top;
   border-style: solid;
   border-width: 1px;
-  // width: 190px;
  }
  .robot-index-image {
-  //  max-width: 80%;
   width: 190px;
    height: auto;
  }
@@ -80,30 +87,53 @@
  }
  /////////////// slider stuff
 
+
+ .checkBoxesInnerWrapper {
+   position: relative;
+   min-height: 10px;
+   height: 100%;
+ }
+
+ #check-boxes-container {
+   float: top;
+   background-color: green;
+   padding: 0px;
+   margin-bottom: 50px;
+  //  height: 100px;
+ }
+ #checkboxes-couplet {
+   float: left;
+   background-color: #EDEFED;
+   border: 1px solid #DDE0E0;
+   padding: 10px;
+   margin: 10px;
+   width: 25%;
+ }
+
  .filter2a {
    background-color: coral;
-   height: 80;
+   height: 80px ;
    width: 15%;
    float: left;
    padding: 10px;
  }
  .filter2b {
    background-color: bisque;
-   height: 80;
+   height: 80px;
    width: 85%;
    float: left;
    position: relative;
  }
 
-.filter2b.filter2b {
-  position: relative;
-  height: 60px;
-}
+// .filter2b.filter2b {
+//   position: relative;
+//   // height: 60px;
+// }
 
-.filter2b > .filter-capsule {
+.filter-capsule {
   position: absolute;
-  top: 50%;
-  margin-top: -20px;
+  // top: 50%;
+  // margin-top: -20px;
   height: 60px;
   width: 100%;
   white-space: nowrap;
@@ -154,13 +184,6 @@
    padding: 0px;
    background-color: pink;
    max-width: 600px;
-
- }
- #sidebar-container {
-   padding: 0px;
-   background-color: red;
-   height: 800px;
-   overflow-y: scroll;
  }
  #robot-list-container {
    padding: 0px;
@@ -174,7 +197,6 @@
    float: left;
    background-color: #F5F5F5;
    padding: 0px;
-   border-top: 5px;
    border-top: 1px solid #DDE0E0;
  }
  #filters-container {
@@ -184,23 +206,13 @@
  }
  #slider-container {
    float: top;
+   background-color: white;
    background-color: orange;
    padding: 0px;
 
  }
- #check-boxes-container {
-   float: top;
-   background-color: green;
-   padding: 0px;
- }
- #checkboxes-left {
-   float: left;
-   background-color: coral;
- }
- #checkboxes-right {
-   float: left;
-   background-color: cornflowerblue;
- }
+
+
  html, body, #map-canvas {
    height: 500px;
    margin: 0;
