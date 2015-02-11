@@ -8,7 +8,7 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    if (!this.model.get('name')){ //qqq why am I checking for the name?
+    if (!this.model.get('name')){
       return this;
     }
     var content = this.template({
@@ -17,20 +17,14 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
 
     this.$el.html(content);
 
+    // add nested comments
     if (this.model.comments()){
-        // add nested comments
         var that = this;
         this.model.comments().each(function (comment) {
           var view = new RentMyRobot.Views.CommentShow({ model: comment });
           that.$el.find('#test-ul').append(view.render().$el);
         });
      }
-
-    // if (this.model.comments()){
-    //     // var view = new RentMyRobot.Views.CommentShow({ model: this.model.comments().models[1] });
-    //     var view = new RentMyRobot.Views.CommentShow({ model: this.model.comments().models[1] });
-    //     this.$el.append(view.render().$el);
-    //  }
     return this;
   },
 });

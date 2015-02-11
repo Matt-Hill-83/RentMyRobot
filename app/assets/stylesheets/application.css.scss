@@ -79,16 +79,18 @@
   width: 345px;
    height: auto;
  }
+ .robot-show-image {
+  width: auto;
+   height: 500px;
+ }
  .robot-index-element-details {
    background-color: white;
    float: top;
    font-size: 16px;
-  //  overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    // font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-family: "Times New Roman", Georgia, Serif;
 
  }
@@ -277,4 +279,10 @@
 
  h3, p {
    margin: 1em;
+ }
+
+
+.col-centered{
+   float: none;
+   margin: 0 auto;
  }

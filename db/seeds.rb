@@ -7,7 +7,6 @@ def create_robot!(i)
                   Mars Rover
                   Flea
                   Porpoise)
-
   manufacturers = %w(Mechatron
                   Boston_Dynamics
                   Google
@@ -16,12 +15,11 @@ def create_robot!(i)
                   iRobot
                   Robotix
                   Honda)
-
   video_urls = %w(wE3fmFTtP9g
                   chPanW0QWhA)
-
   image_urls = %w(robot0
                   RobotBird)
+  lorem_text = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
   Robot.create!(
     name: names[i%(names.length-1)],
@@ -31,6 +29,7 @@ def create_robot!(i)
     lat: rand() * 0.050 + 37.735,
     lng: rand() * 0.050 + -122.482,
     price: rand() * 1000 + 1000,
+    description: lorem_text,
     robot_type: %w('industrial'
                   'consumer'
                   'research'
@@ -42,21 +41,18 @@ def create_robot!(i)
   )
 end
 
-  lorem_text = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-
 def create_comment!(robotNumber, commentNumber)
+  lorem_text = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   Comment.create!(
     user_id: 0,
     robot_id: robotNumber,
     title: 'Comment ' + commentNumber.to_s,
-    body: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    body: lorem_text,
   )
 end
 
 numRobots = 20
 numComments = 5
-
 
 numRobots.times do |robotNumber|
   create_robot!(robotNumber)
