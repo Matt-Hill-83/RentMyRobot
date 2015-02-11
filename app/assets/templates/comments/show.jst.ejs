@@ -1,12 +1,17 @@
 
---------------------------------
 
+
+
+<strong class="pull-left primary-font">
+  <%= comment.escape('title') %>
+</strong>
+<small class="pull-right text-muted">
+  <span class="glyphicon glyphicon-time"></span>7 mins ago
+</small>
+</br>
 
 
 
 <li id='test-li' class="ui-state-default">
-
-<h4><%= comment.escape('body') %></h4>
-  Lorem
-
-  </li>
+  <%= comment.escape('body') %>
+</li>

@@ -42,12 +42,15 @@ def create_robot!(i)
   )
 end
 
+  lorem_text = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+
 def create_comment!(robotNumber, commentNumber)
   Comment.create!(
     user_id: 0,
     robot_id: robotNumber,
     title: 'Comment ' + commentNumber.to_s,
-    body: 'Body ' + commentNumber.to_s,
+    body: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   )
 end
 
