@@ -22,9 +22,15 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
         var that = this;
         this.model.comments().each(function (comment) {
           var view = new RentMyRobot.Views.CommentShow({ model: comment });
-          that.$el.append(view.render().$el);
+          that.$el.find('#test-li').append(view.render().$el);
         });
      }
+
+    // if (this.model.comments()){
+    //     // var view = new RentMyRobot.Views.CommentShow({ model: this.model.comments().models[1] });
+    //     var view = new RentMyRobot.Views.CommentShow({ model: this.model.comments().models[1] });
+    //     this.$el.append(view.render().$el);
+    //  }
     return this;
   },
 });
