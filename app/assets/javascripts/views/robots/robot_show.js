@@ -22,7 +22,7 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
         var that = this;
         this.model.comments().each(function (comment) {
           var view = new RentMyRobot.Views.CommentShow({ model: comment });
-          that.$el.find('#test-li').append(view.render().$el);
+          that.$el.find('#test-ul').append(view.render().$el);
         });
      }
 
