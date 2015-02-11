@@ -109,15 +109,35 @@
  }
 
  /////////////// video stuff
- .embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px;
-   height: 0; overflow: hidden; max-width: 100%; height: auto; }
+ .embed-container {
+   position: relative;
+   padding-bottom: 56.25%;
+   padding-top: 30px;
+   height: 0;
+   overflow: hidden;
+   max-width: 100%;
+   height: auto; }
 .embed-container iframe, .embed-container object,
 // .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-.embed-container embed { position: absolute; top: 500; left: 0; width: 900px; height: 900px; 	z-index: 100000000;
+.embed-container embed {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
 }
  #video_container {
-   height: 1000;
-   width: 1000;
+   height: 400px;
+   width: 400px;
+   padding: 0px;
+   padding-left: 0px;
+ }
+ #left-container {
+   height: 1000px;
+   width: 600px;
+   padding: 0px;
+   padding-left: 0px;
+   margin: 0px;
  }
 
  /////////////// slider stuff
@@ -210,6 +230,7 @@
    padding: 0px;
    background-color: pink;
    max-width: 600px;
+   margin: 0px;
  }
  #robot-list-container {
    padding: 0px;
@@ -240,7 +261,7 @@
 
 
  html, body, #map-canvas {
-   height: 900px;
+   height: 400px;
    margin: 0;
    padding: 0;
  }
