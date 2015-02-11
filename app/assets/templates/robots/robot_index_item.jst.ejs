@@ -13,17 +13,10 @@
     <div class='robot-index-element-details'>
       <left><a href="#/robots/<%= robot.id %>"><%= robot.escape('name') %></a>, by <%= robot.escape('manufacturer') %></left><br>
 
-      <left>Location: <%= robot.escape('location') %></left><br>
-      <left>Price: $<%= robot.escape('price') %></left><br>
-      <left>Type: <%= robot.escape('robot_type') %></left>
-
       <a href="#/robot/<%=robot.escape("id")%>">
-        <div class="listing-text">
-          <div class="price-box">
+        <div class="overlay-price-text">
+          <div class="overlay-price-box">
             <div class="listing-price-symbol">$</div><h2 class="listing-price-index"><%=robot.escape('price')%></h2>
-          </div>
-          <div class="listing-info">
-            <h4><%=robot.escape('title')%></h4>
           </div>
         </div>
       </a>

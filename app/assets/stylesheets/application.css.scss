@@ -86,19 +86,17 @@
     font-family: "Times New Roman", Georgia, Serif;
 
  }
- /////////////// new shit
-
- .listing-text {
-   color: rgb(115, 113, 113);
+ /////////////// image overlays
+ .overlay-price-text {
+   color: rgb(110, 110, 110);
  }
- .price-box {
+ .overlay-price-box {
    width: 95px;
    height: 40px;
-   /* border: 1px solid black; */
    position: absolute;
-   background-color: rgba(63, 63, 63, 0.92);
+   background-color: rgba(63, 63, 63, 0.85);
    color: white;
-   margin-top: -175px;
+   margin-top: -90px;
  }
  .listing-price-symbol {
    position: absolute;
@@ -106,20 +104,9 @@
    margin-top: 6px;
  }
  .listing-price-index {
-   margin-top: 4px;
+   margin-top: 7px;
    margin-left: 18px;
  }
-
-
-
-
- .left-aligned-listing-info {
-   float: left;
-   position: absolute;
- }
-
-
-
  /////////////// slider stuff
 
 
