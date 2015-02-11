@@ -91,22 +91,24 @@
    color: rgb(110, 110, 110);
  }
  .overlay-price-box {
-   width: 95px;
-   height: 40px;
+   color: rgb(255, 255, 255);
+   background-color: rgba(55, 55, 55, 0.85);
    position: absolute;
-   background-color: rgba(63, 63, 63, 0.85);
-   color: white;
+   width: 95px;
+   height: 42px;
    margin-top: -90px;
  }
- .listing-price-symbol {
+ .overlay-price-symbol {
    position: absolute;
-   margin-left: 8px;
-   margin-top: 6px;
+   margin-left: 7px;
+   margin-top: 8px;
  }
- .listing-price-index {
+ .overlay-price-value {
    margin-top: 7px;
-   margin-left: 18px;
+   margin-left: 20px;
  }
+ /////////////// video stuff
+ .embed-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
  /////////////// slider stuff
 
 
