@@ -1,5 +1,6 @@
 RentMyRobot.Views.Filters = Backbone.CompositeView.extend({
   template: JST['main/filters'],
+  className: 'filtersInnerWrapper',
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render); //qqq do I need this at this conatiner level?
