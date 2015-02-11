@@ -1,14 +1,22 @@
 def create_robot!(i)
   Robot.create!(
-    name: 'Robot ' + i.to_s,
-    manufacturer: %w('Mechatron'
-                    'Boston Dynamics'
-                    'Google'
-                    'Industrial Perception'
-                    'Kuka'
-                    'iRobot'
-                    'Robotix'
-                    'Honda').sample,
+    # name: 'Robot ' + i.to_s,
+    name: %w(Big_Dog
+                    Little_Dog
+                    Cheetah
+                    Roomba
+                    Reaper
+                    Mars Rover
+                    Flea
+                    Porpoise).sample,
+    manufacturer: %w(Mechatron
+                    Boston_Dynamics
+                    Google
+                    Industrial_Perception
+                    Kuka
+                    iRobot
+                    Robotix
+                    Honda).sample,
     image_url: "robot" + i.to_s + ".png",
     lat: rand() * 0.050 + 37.735,
     lng: rand() * 0.050 + -122.482,

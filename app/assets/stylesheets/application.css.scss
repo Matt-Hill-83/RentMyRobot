@@ -42,7 +42,7 @@
   //  background-color: yellow;
    float: top;
    margin: 0px;
-   height: 800px;
+   height: 900px;
    overflow-y: scroll;
    max-width: 865px;
  }
@@ -70,7 +70,7 @@
   border-width: 1px;
  }
  .robot-index-image {
-  width: 250px;
+  width: 345px;
    height: auto;
  }
  .robot-index-element-details {
@@ -86,6 +86,40 @@
     font-family: "Times New Roman", Georgia, Serif;
 
  }
+ /////////////// new shit
+
+ .listing-text {
+   color: rgb(115, 113, 113);
+ }
+ .price-box {
+   width: 95px;
+   height: 40px;
+   /* border: 1px solid black; */
+   position: absolute;
+   background-color: rgba(63, 63, 63, 0.92);
+   color: white;
+   margin-top: -175px;
+ }
+ .listing-price-symbol {
+   position: absolute;
+   margin-left: 8px;
+   margin-top: 6px;
+ }
+ .listing-price-index {
+   margin-top: 4px;
+   margin-left: 18px;
+ }
+
+
+
+
+ .left-aligned-listing-info {
+   float: left;
+   position: absolute;
+ }
+
+
+
  /////////////// slider stuff
 
 
@@ -167,9 +201,6 @@
   top: calc(50% - .4em);
  }
  .slider-capsule {
-  //  margin-top: 40px;
-  //  margin-bottom: 20px;
-  //  vertical-align: middle;
  }
  ///////////////
  #container2 {
