@@ -7,7 +7,8 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
   events: {
     'click div.robot-index-element-wrapper': 'panToListing',
     'mouseenter div.robot-index-element-wrapper': 'startBounce',
-    'mouseleave div.robot-index-element-wrapper': 'stopBounce'
+    'mouseleave div.robot-index-element-wrapper': 'stopBounce',
+    'mouseenter .btn-video': 'showVideo'
   },
 
   initialize: function () {
@@ -37,6 +38,10 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
     });
     this.$el.find('#map-container').html(this.mapView.$el);
     this.mapView.render();
+  },
+
+  showVideo: function (event) {
+    
   },
 
   render: function () {
