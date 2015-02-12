@@ -27,7 +27,8 @@
  }
  #main {
    top: 51px;
-   position: absolute;
+   position: relative;
+   margin: auto;
  }
 
 //main
@@ -44,18 +45,20 @@
    position: relative;
    float: left;
  }
- .sidebar-class {
+
+ .search-item-list {
    background-color: white;
-  //  background-color: yellow;
    float: top;
    margin: 0px;
-   height: 600px;
+   height: 90vh;
    overflow-y: scroll;
  }
  .robot-index-element-wrapper {
-  background-color: red;
+  // background-color: red;
   display: inline-block;
-  margin: 15px;
+  // margin: 15px;
+  padding: 15px;
+  width: 50%;
   float: top;
  }
  .separator-bar {
@@ -73,15 +76,15 @@
   display: inline-block;
   float: top;
   border-style: solid;
+  width: 100%;
   border-width: 1px;
  }
  .robot-index-image {
-  width: 345px;
-   height: auto;
+    width: 100%;
+    height: auto;
  }
  .robot-show-image {
-  width: auto;
-   height: 500px;
+  width: 100%;
  }
  .robot-index-element-details {
    background-color: white;
