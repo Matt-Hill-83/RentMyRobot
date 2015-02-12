@@ -10,13 +10,6 @@ development:
   <<: *default
   database: RentMyRobot_development
 
-
 test:
   <<: *default
   database: RentMyRobot_test
-
-# production:
-#   <<: *default
-#   database: RentMyRobot_production
-#   username: RentMyRobot
-#   password: <%= ENV['RENTMYROBOT_DATABASE_PASSWORD'] %>
