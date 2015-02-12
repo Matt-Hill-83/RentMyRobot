@@ -12,7 +12,8 @@
 
     <div class='robot-index-element-details row'>
       <div class='col-sm-6'>
-        <left><a href="#/robots/<%= robot.id %>"><%= robot.escape('name') %></a>, by <%= robot.escape('manufacturer') %></left>
+        <left><a href="#/robots/<%= robot.id %>"><%= robot.escape('name') %></a>, by <%= robot.escape('manufacturer') %></left><br>
+        <left><%= robot.escape('robot_type') %></left>
       </div>
 
       <div class='col-sm-3'>
