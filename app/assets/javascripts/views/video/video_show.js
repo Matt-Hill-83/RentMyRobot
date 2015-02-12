@@ -9,7 +9,9 @@ RentMyRobot.Views.VideoShow = Backbone.CompositeView.extend({
 	// },
 
 	render: function() {
-		var content = this.template();
+		var content = this.template({
+			model: this.model
+		});
 		this.$el.html(content);
 		return this;
 	},

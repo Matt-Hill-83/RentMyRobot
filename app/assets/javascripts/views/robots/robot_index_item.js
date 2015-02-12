@@ -10,7 +10,7 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
   className: 'robot-index-element-wrapper',
 
   events: {
-    'mouseenter .btn-video': 'videoShow',
+    'click .btn-video': 'videoShow',
     // 'mouseleave .btn-video': 'videoKill'
   },
 
