@@ -4,13 +4,9 @@ gem 'backbone-on-rails'
 gem 'bcrypt'
 gem 'bootstrap-sass'
 # gem 'bootstrap-sass', '3.2.0.2'
-gem 'coffee-rails', '~> 4.0.0'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'pg'
-gem 'uglifier', '>= 1.3.0'
-
 
 gem 'rails', '4.1.7'
 gem 'sass-rails', '~> 4.0.3'
