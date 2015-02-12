@@ -54,9 +54,7 @@
    overflow-y: scroll;
  }
  .robot-index-element-wrapper {
-  // background-color: red;
   display: inline-block;
-  // margin: 15px;
   padding: 15px;
   width: 50%;
   float: top;
@@ -87,7 +85,7 @@
   width: 100%;
  }
  .robot-index-element-details {
-   background-color: white;
+   background-color: #F5F5F5;
    float: top;
    font-size: 16px;
     overflow-x: hidden;
@@ -269,7 +267,7 @@
 
 
  html, body, #map-canvas {
-   height: 310px;
+   height: 90vh;
    margin: 0;
    padding: 0;
  }

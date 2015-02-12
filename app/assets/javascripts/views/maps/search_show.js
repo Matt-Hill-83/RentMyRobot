@@ -8,39 +8,23 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
     this.mapView = new RentMyRobot.Views.EventMapShow({
       collection: this.collection
     });
-
-    // this.listingsIndex = new GoogleMapsDemo.Views.ListingsIndex({
-    //   collection: this.collection
-    // });
   },
 
-  // events: {
-  //   // 'click a.remove-listing': 'destroyListing',
-  //   'click a.listing-name': 'panToListing',
-  //   'mouseenter a.robot-index-image': 'startBounce',
-  //   'mouseleave a.listing-name': 'stopBounce'
-  // },
 
   // Event handlers
   startBounce: function (event) {
-
     var robotId = $(event.currentTarget).data('robot-id');
     this.mapView.startBounce(robotId);
   },
 
   stopBounce: function (event) {
-    var listingId = $(event.currentTarget).data('listing-id');
+    var listingId = $(event.currentTarget).data('robot-id');
+    // debugger
     this.mapView.stopBounce(listingId);
   },
 
-  // destroyListing: function (event) {
-  //   var listingId = $(event.currentTarget).data('listing-id');
-  //   var listing = this.collection.get(listingId);
-  //   listing.destroy();
-  // },
-
   panToListing: function (event) {
-    var listingId = $(event.currentTarget).data('listing-id');
+    var listingId = $(event.currentTarget).data('robot-id');
     var marker = this.mapView._markers[listingId];
     this.mapView._map.panTo(marker.getPosition());
   },

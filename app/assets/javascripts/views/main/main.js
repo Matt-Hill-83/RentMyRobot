@@ -5,18 +5,14 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
   id: 'main-div',
 
   events: {
-    // 'click a.remove-listing': 'destroyListing',
-    'click div.robot-index-element-wrapper': 'panToListing',  // qqq turn this into hover?
+    'click div.robot-index-element-wrapper': 'panToListing',
     'mouseenter div.robot-index-element-wrapper': 'startBounce',
     'mouseleave div.robot-index-element-wrapper': 'stopBounce'
   },
 
-
   initialize: function () {
-    // this.listenTo(this.collection, 'sync', this.render);
     this.addSidebar();
   },
-
 
   startBounce: function (event) {
     console.log('start bounce');
@@ -36,7 +32,6 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
   },
 
   addMap: function () {
-    // mapView = new RentMyRobot.Views.MarkerMapShow({
     this.mapView = new RentMyRobot.Views.SearchShow({
       collection: RentMyRobot.Collections.robots
     });
