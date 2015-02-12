@@ -15,7 +15,6 @@ RentMyRobot.Views.Slider = Backbone.CompositeView.extend({
         $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
       }
     });
-
   },
 
   render: function () {

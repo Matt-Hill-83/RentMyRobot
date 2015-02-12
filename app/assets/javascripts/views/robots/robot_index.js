@@ -2,7 +2,7 @@ RentMyRobot.Views.RobotList = Backbone.CompositeView.extend({
   template: JST['robots/robot_index'],
 
   initialize: function () {
-    this.listenTo(this.collection, 'sync', this.render); //qqq do I need this at this conatiner level?
+    this.listenTo(this.collection, 'sync', this.render); 
   },
 
   addRobotItem: function (robot) {
@@ -10,7 +10,7 @@ RentMyRobot.Views.RobotList = Backbone.CompositeView.extend({
       collection: RentMyRobot.Collections.robots,
       model: robot
     });
-    this.addSubview('#robot-item-container', robotListView); // container must be inside this template
+    this.addSubview('#robot-item-container', robotListView); 
   },
 
   render: function () {

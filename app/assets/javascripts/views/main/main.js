@@ -15,12 +15,12 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
   },
 
   startBounce: function (event) {
-    console.log('start bounce');
+    // console.log('start bounce');
     this.mapView.startBounce(event);
   },
 
   stopBounce: function (event) {
-    console.log('stop bounce');
+    // console.log('stop bounce');
     this.mapView.stopBounce(event);
   },
 

@@ -3,7 +3,7 @@ RentMyRobot.Views.Filters = Backbone.CompositeView.extend({
   className: 'filtersInnerWrapper',
 
   initialize: function () {
-    this.listenTo(this.collection, 'sync', this.render); //qqq do I need this at this conatiner level?
+    this.listenTo(this.collection, 'sync', this.render);
     this.addSlider();
     this.addCheckBoxes();
   },
@@ -12,14 +12,14 @@ RentMyRobot.Views.Filters = Backbone.CompositeView.extend({
     sliderView = new RentMyRobot.Views.Slider({
       collection: RentMyRobot.Collections.robots
     });
-    this.addSubview('#slider-container', sliderView); // container must be inside this template
+    this.addSubview('#slider-container', sliderView);
   },
 
   addCheckBoxes: function (robot) {
     sliderView = new RentMyRobot.Views.CheckBoxes({
       collection: RentMyRobot.Collections.robots
     });
-    this.addSubview('#check-boxes-container', sliderView); // container must be inside this template
+    this.addSubview('#check-boxes-container', sliderView);
   },
 
   render: function () {

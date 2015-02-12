@@ -4,7 +4,7 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
   className: 'sidebar-class row search-item-list', // gets assigned to $el, which is a div by default
 
   initialize: function () {
-    this.listenTo(this.collection, 'sync', this.render); //qqq do I need this at this conatiner level?
+    this.listenTo(this.collection, 'sync', this.render); 
     this.addRobotsIndex();
     this.addFilters();
   },
