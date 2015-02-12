@@ -5,7 +5,8 @@ RentMyRobot.Views.Root = Backbone.CompositeView.extend({
 	},
 
 	events: {
-		"click .root-banner-image": "goToMain"
+		// "click .root-banner-image": "goToMain",
+		"click .modal-submit-btn": "goToMain"
 	},
 
 	goToMain: function(event){
