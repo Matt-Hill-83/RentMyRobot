@@ -15,9 +15,12 @@
 
 //= require jquery.ui.slider
 
+
 //= require underscore
 //= require backbone
 //= require bootstrap
+
+//= require bootstrap-sprockets
 
 //= require rent_my_robot
 

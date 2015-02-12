@@ -15,6 +15,7 @@
  *= require_self
  */
 
+ @import "bootstrap-sprockets";
  @import "bootstrap";
 
  //By default, the map will resize itself to fill its container. If you try to put the
@@ -235,7 +236,7 @@
  }
  #map-container {
    padding: 0px;
-   background-color: pink;
+   background-color: white;
    margin: 0px;
  }
  #robot-list-container {

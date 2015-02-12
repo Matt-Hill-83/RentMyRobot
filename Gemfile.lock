@@ -43,7 +43,7 @@ GEM
       railties
     bcrypt (3.1.7)
     bcrypt-ruby (3.1.2)
-    bootstrap-sass (3.1.1.1)
+    bootstrap-sass (3.2.0.2)
       sass (~> 3.2)
     builder (3.2.2)
     coffee-rails (4.0.1)
@@ -74,6 +74,8 @@ GEM
     jquery-ui-rails (4.0.3)
       jquery-rails
       railties (>= 3.1.0)
+    js_assets (0.0.9)
+      rails
     json (1.8.2)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
@@ -145,12 +147,13 @@ DEPENDENCIES
   backbone-on-rails
   bcrypt
   bcrypt-ruby
-  bootstrap-sass
+  bootstrap-sass (= 3.2.0.2)
   coffee-rails (~> 4.0.0)
   font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
   jquery-ui-rails
+  js_assets
   newrelic_rpm
   pg
   rails (= 4.1.7)
