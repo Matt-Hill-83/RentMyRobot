@@ -1,0 +1,127 @@
+
+
+/////////////// slider stuff
+
+.checkBoxesInnerWrapper {
+  position: relative;
+  min-height: 10px;
+  height: 100%;
+}
+#check-boxes-container {
+  float: top;
+  background-color: green;
+  padding: 0px;
+ //  margin-bottom: 50px;
+}
+#checkboxes-couplet {
+  float: left;
+  background-color: #EDEFED;
+  border: 1px solid #DDE0E0;
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+  white-space: nowrap;
+
+}
+.filter2a {
+ //  background-color: coral;
+  background-color: white;
+  height: 80px ;
+  width: 15%;
+  float: left;
+  padding: 10px;
+}
+.filter2b {
+  background-color: white;
+ //  background-color: bisque;
+  height: 80px;
+  width: 85%;
+  float: left;
+  position: relative;
+}
+.filter-capsule {
+ position: absolute;
+ height: 60px;
+ width: 100%;
+ // white-space: nowrap;
+}
+.filter3a {
+  height: 80px;
+  padding: 10px;
+ //  background-color: coral;
+  background-color: white;
+  width: 15%;
+  float: left;
+}
+.filter3b {
+  background-color: white;
+  height: 80px;
+  width: 85%;
+  float: left;
+  top: calc(50% - .4em);
+
+}
+.filter-label {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  float: top;
+  vertical-align: middle;
+}
+.separator-bar {
+  margin: 2px;
+}
+.filter-capsule {
+  height: auto;
+  min-height: 10px;
+  position: relative;
+}
+#slider-range {
+ top: calc(50% - .4em);
+}
+.slider-capsule {
+}
+///////////////
+#container2 {
+  background-color: ghostwhite;
+}
+#map-container {
+  padding: 0px;
+  background-color: white;
+  margin: 0px;
+}
+#robot-list-container {
+  padding: 0px;
+  float: left;
+  background-color: yellow;
+}
+#robots-list {
+  background-color: yellow;
+}
+#robot-item-container {
+  float: left;
+  background-color: #F5F5F5;
+  padding: 0px;
+  border-top: 1px solid #DDE0E0;
+}
+#filters-container {
+  float: top;
+  background-color: white;
+}
+#slider-container {
+  float: top;
+  background-color: white;
+  padding: 0px;
+}
+
+html, body, #map-canvas {
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: helvetica;
+}
+
+h3, p {
+  margin: 1em;
+}
