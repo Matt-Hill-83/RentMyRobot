@@ -19,3 +19,7 @@ gem 'newrelic_rpm'
 gem 'pg'
 gem 'rails_12factor'
 gem 'bcrypt-ruby', require: 'bcrypt'
+
+group :development, :test do
+  gem 'byebug'
+end

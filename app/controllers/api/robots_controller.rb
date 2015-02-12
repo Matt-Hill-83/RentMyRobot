@@ -17,11 +17,17 @@ module Api
     end
 
     def index
-      @robots = Robot.all
+      if (params[:min_price] && params[:max_price])
+        @robots = Robot.where('price > ? AND price < ?', params[:min_price], params[:max_price])
+      else
+        @robots = Robot.all
+      end
       render json: @robots
     end
 
     def show
+      debugger
+
       @robot = Robot.find(params[:id])
 
       if @robot

@@ -3,7 +3,7 @@ RentMyRobot.Views.Slider = Backbone.CompositeView.extend({
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
-    this.priceRange = [0, 1000];
+    this.priceRange = [1000, 2000];
   },
 
   initializePriceRange: function () {
@@ -14,8 +14,8 @@ RentMyRobot.Views.Slider = Backbone.CompositeView.extend({
   setupSlider: function () {
     $( "#slider-range" ).slider({
       range: true,
-      min: 0,
-      max: 1000,
+      min: 1000,
+      max: 2000,
       values: this.priceRange,
       slide: this.updatePriceRange.bind(this),
       stop: this.fetchFilteredCollection.bind(this)
