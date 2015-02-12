@@ -1,7 +1,5 @@
 RentMyRobot.Views.SearchShow = Backbone.View.extend({
-  // Initialization
   template: JST['search/show'],
-
   className: 'full-size',
 
   initialize: function () {
@@ -10,8 +8,6 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
     });
   },
 
-
-  // Event handlers
   startBounce: function (event) {
     var robotId = $(event.currentTarget).data('robot-id');
     this.mapView.startBounce(robotId);
@@ -19,7 +15,6 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
 
   stopBounce: function (event) {
     var listingId = $(event.currentTarget).data('robot-id');
-    // debugger
     this.mapView.stopBounce(listingId);
   },
 
@@ -41,6 +36,5 @@ RentMyRobot.Views.SearchShow = Backbone.View.extend({
   remove: function () {
     Backbone.View.prototype.remove.call(this);
     this.mapView.remove();
-    // this.listingsIndex.remove();
   }
 });
