@@ -8,7 +8,6 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
     'click div.robot-index-element-wrapper': 'panToListing',
     'mouseenter div.robot-index-element-wrapper': 'startBounce',
     'mouseleave div.robot-index-element-wrapper': 'stopBounce',
-    'mouseenter .btn-video': 'showVideo'
   },
 
   initialize: function () {
@@ -16,12 +15,10 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
   },
 
   startBounce: function (event) {
-    // console.log('start bounce');
     this.mapView.startBounce(event);
   },
 
   stopBounce: function (event) {
-    // console.log('stop bounce');
     this.mapView.stopBounce(event);
   },
 
@@ -40,10 +37,6 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
     this.mapView.render();
   },
 
-  showVideo: function (event) {
-    
-  },
-
   render: function () {
     var content = this.template({
       collection: RentMyRobot.Collections.robots
@@ -51,10 +44,7 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
 
     this.$el.html(content);
     this.attachSubviews();
-
-    //qqq how do I put my map into a subview?
     this.addMap();
-
     return this;
   }
 });

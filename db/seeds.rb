@@ -16,8 +16,14 @@ def create_robot!(i)
                   Robotix
                   Honda)
   video_urls = %w(wE3fmFTtP9g
+                  chPanW0QWhA
+                  wE3fmFTtP9g
                   chPanW0QWhA)
   image_urls = %w(robot0
+                  RobotBird
+                  robot0
+                  RobotBird
+                  robot0
                   RobotBird)
   lorem_text = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 

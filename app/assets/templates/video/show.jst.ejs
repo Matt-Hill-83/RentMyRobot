@@ -1,5 +1,4 @@
 <div id="test-video-holder"></div>
 <div class='embed-container'>
-  <iframe src='http://www.youtube.com/embed/wE3fmFTtP9g' frameborder='0' allowfullscreen></iframe>
+  <iframe src='http://www.youtube.com/embed/<%=model.escape("video_url")%>' frameborder='0' allowfullscreen></iframe>
 </div>
-  <span><%=model.escape("video_url")%></span>
