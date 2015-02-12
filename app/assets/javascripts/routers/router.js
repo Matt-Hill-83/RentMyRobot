@@ -15,6 +15,8 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
   },
 
   main: function () {
+    $('body').removeClass('modal-open');
+    $('.modal-backdrop').remove();
     RentMyRobot.Collections.robots.fetch();
     var view = new RentMyRobot.Views.Main({
       collection: RentMyRobot.Collections.robots
