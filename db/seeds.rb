@@ -44,12 +44,13 @@ def create_robot!(i)
                   aa-aisimo
                   aa-cheetah
                   aa-flea
+                  aa-atlas
+                  aa-net
+                  aa-throw
                   aa-honda-lawn
                   aa-mars
-                  aa-ping-pong
                   aa-honda-lawn
                   aa-mars
-                  aa-ping-pong
                   aa-snake1
                   aa-water-snake
                   aa-honda-lawn
@@ -98,7 +99,7 @@ def create_comment!(robotNumber, commentNumber)
   )
 end
 
-numRobots = 20
+numRobots = 17
 numComments = 5
 
 numRobots.times do |robotNumber|
