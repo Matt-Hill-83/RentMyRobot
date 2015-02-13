@@ -30,3 +30,23 @@
   padding-left: 0px;
   margin: 0px;
 }
+
+
+////////////////// root page
+.video-wrapper{
+  height: 550px;
+  overflow-y: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  background: black;
+}
+
+video{
+  position: absolute;
+  // bottom: -90px;
+  width: 105%;
+  overflow: hidden;
+  min-width: 1050px;
+}
