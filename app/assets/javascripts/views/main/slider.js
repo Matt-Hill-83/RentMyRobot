@@ -30,6 +30,7 @@ RentMyRobot.Views.Slider = Backbone.CompositeView.extend({
 
   fetchFilteredCollection: function (event, ui) {
     this.priceRange = ui.values;
+    debugger
     this.collection.fetch({
       data: { min_price: ui.values[0], max_price: ui.values[1] }
     });

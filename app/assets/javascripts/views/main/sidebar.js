@@ -29,12 +29,13 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
   },
 
   searchRobots: function (event) {
-    console.log('test');
     newFunc = function (event) {
     var $data = $(event.currentTarget).serializeJSON();
+    // qqq why doesn't this fetch action trigger the breakpoint in the controller?
+    this.collection.fetch({
+      data: $data
+    });
     }
-    debugger
-    var a = 1 + 1
   },
 
   render: function () {

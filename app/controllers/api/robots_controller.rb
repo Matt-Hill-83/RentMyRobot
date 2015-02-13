@@ -20,7 +20,7 @@ module Api
       robot_types = %w(Industrial
                      Consumer
                      Medical)
-      # robot_types = params[:robot_types]
+      # robot_types = params[:filters[checkboxes]]
       robot_types = ["Medical", "Industrial"]
 
       if (params[:min_price] && params[:max_price])
