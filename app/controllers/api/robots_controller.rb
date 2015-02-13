@@ -17,18 +17,41 @@ module Api
     end
 
     def index
-      robot_types = %w(Industrial
-                     Consumer
-                     Medical)
-      # robot_types = params[:filters[checkboxes]]
-      robot_types = ["Medical", "Industrial"]
 
-      if (params[:min_price] && params[:max_price])
-        @robots = Robot.where('price BETWEEN ? AND ?', params[:min_price], params[:max_price])
+      # fixme If I check a box after the slider is set, new slider values don't get sent to
+      # controller
+
+      if (params['slider_min_value'] &&
+          params['slider_min_value'] != "" &&
+          params['slider_max_value'] &&
+          params['slider_max_value'] != "" &&
+          params['filters'])
+        slider_min_value = params['slider_min_value']
+        slider_max_value = params['slider_max_value']
+        robot_types = params['filters']['checkboxes']
+        msg = 'all 3'
+        @robots = Robot.where('price BETWEEN ? AND ?', slider_min_value, slider_max_value)
+
+      elsif (params['slider_min_value'] &&
+          params['slider_min_value'] != "" &&
+          params['slider_max_value'] &&
+          params['slider_max_value'] != "")
+        slider_min_value = params['slider_min_value']
+        slider_max_value = params['slider_max_value']
+        @robots = Robot.where('price BETWEEN ? AND ?', slider_min_value, slider_max_value)
+        msg = 'jsut 2'
+
+      elsif (params['filters'] &&
+             params['filters']['checkboxes'])
+        msg = 'only 1'
+        robot_types = params['filters']['checkboxes']
+        @robots = Robot.where(robot_type: robot_types)
+
       else
+        msg = 'all'
         @robots = Robot.all
-        # @robots = Robot.where(robot_type: robot_types)
       end
+      # debugger
       render json: @robots
     end
 

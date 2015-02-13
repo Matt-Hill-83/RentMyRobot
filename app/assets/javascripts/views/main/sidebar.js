@@ -30,13 +30,10 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
 
   searchRobots: function (event) {
     event.preventDefault();
-    debugger
     var $data = $('#filters-container').serializeJSON();
-  // qqq why doesn't this fetch action trigger the breakpoint in the controller?
     this.collection.fetch({
       data: $data
     });
-    var a = 2;
   },
 
   render: function () {
@@ -48,10 +45,3 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
     return this;
   }
 });
-
-
-
-//create hidden fields and write to them to allow us to capture the
-//change to the high and low limit markers
-//user serialize json to grab all the field in a form and send them
-// up to the controller.  It uses their ids for their name labels.

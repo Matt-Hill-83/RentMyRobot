@@ -36,9 +36,6 @@ RentMyRobot.Views.Slider = Backbone.CompositeView.extend({
     this.$( "#slider_min_value" ).val(ui.values[0]);
     this.$( "#slider_max_value" ).val(ui.values[1]);
     $("#filters-container").change();
-    // this.collection.fetch({
-    //   data: { min_price: ui.values[0], max_price: ui.values[1] }
-    // });
   },
 
   render: function () {

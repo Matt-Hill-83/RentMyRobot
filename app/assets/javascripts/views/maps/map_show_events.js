@@ -80,7 +80,7 @@ RentMyRobot.Views.EventMapShow = Backbone.View.extend({
     };
 
     this.collection.fetch({
-      data: { filter_data: filterData }
+      data: { filter_data: filterData } //fixme use this to filter for in bounds points
     });
   },
 
