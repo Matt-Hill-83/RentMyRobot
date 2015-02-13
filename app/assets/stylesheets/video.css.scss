@@ -34,19 +34,31 @@
 
 ////////////////// root page
 .video-wrapper{
-  height: 550px;
-  overflow-y: hidden;
   position: absolute;
-  top: 0;
-  width: 100%;
+  height: auto;
+  overflow-y: hidden;
+  // margin-top: auto;
+  // margin-bottom: auto;
+  // margin: auto;
+  top: 50%;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 95%;
   z-index: 10000;
-  background: black;
+  background: #A0D3FF;
+  border: 1px solid black;
+  float: left;
+
 }
 
-video{
-  position: absolute;
+.my-video-class{
+  position: relative;
+  height: 100%;
+  width: 100%;
   // bottom: -90px;
-  width: 105%;
+  top: 0px;
   overflow: hidden;
-  min-width: 1050px;
+  float: left;
+
 }
