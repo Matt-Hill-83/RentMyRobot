@@ -1,25 +1,46 @@
 def create_robot!(i)
-  names = %w(Big_Dog
-                  Little_Dog
-                  Cheetah
-                  Roomba
-                  Reaper
-                  Mars Rover
-                  Flea
-                  Porpoise)
-  manufacturers = %w(Mechatron
-                  Boston_Dynamics
+  names = %w(Google
+                  Festo
+                  Honda
                   Google
-                  Industrial_Perception
-                  Kuka
+                  Google
+                  iRobot
+                  Robotix
+                  Honda
+                  Google
+                  iRobot
+                  Robotix
+                  Honda
+                  Google
                   iRobot
                   Robotix
                   Honda)
+
+  manufacturers = %w(Google
+                  Festo
+                  Honda
+                  Google
+                  Google
+                  iRobot
+                  Robotix
+                  Honda
+                  Boston_Dynamics
+                  iRobot
+                  Robotix
+                  Honda
+                  Boston_Dynamics
+                  iRobot
+                  Robotix
+                  Honda)
+
+
   video_urls = %w(wE3fmFTtP9g
                   chPanW0QWhA
                   wE3fmFTtP9g
                   chPanW0QWhA)
-  image_urls = %w(
+
+  image_urls = %w(big-dog
+                  RobotBird
                   aa-aisimo
                   aa-cheetah
                   aa-flea
@@ -31,8 +52,11 @@ def create_robot!(i)
                   aa-ping-pong
                   aa-snake1
                   aa-water-snake
-                )
-  lorem_text = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                  aa-honda-lawn
+                  aa-mars
+                  aa-ping-pong)
+  comment_text = "This is a fantastic robot.  We took it out for a test on Saturday and had a ball!"
+  description_text = "This robot has been designed to handle all your robotic needs.  No task is too small."
 
   Robot.create!(
     name: names[i%(names.length-1)],
@@ -43,8 +67,16 @@ def create_robot!(i)
     lat: rand() * 0.050 + 37.735,
     lng: rand() * 0.050 + -122.482,
     price: rand() * 1000 + 1000,
-    description: lorem_text,
+    description: description_text,
     robot_type: %w(Industrial
+                   Consumer
+                   Research
+                   Military
+                  Industrial
+                   Consumer
+                   Research
+                   Military
+                  Industrial
                    Consumer
                    Research
                    Military
@@ -56,12 +88,13 @@ def create_robot!(i)
 end
 
 def create_comment!(robotNumber, commentNumber)
-  lorem_text = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  comment_text = "This is a fantastic robot.  We took it out for a test on Saturday and had a ball!"
+  description_text = "This robot has been designed to handle all your robotic needs.  No task is too small."
   Comment.create!(
     user_id: 0,
     robot_id: robotNumber,
     title: 'Comment ' + commentNumber.to_s,
-    body: lorem_text,
+    body: comment_text,
   )
 end
 
