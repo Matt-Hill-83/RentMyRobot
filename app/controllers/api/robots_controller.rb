@@ -17,36 +17,23 @@ module Api
     end
 
     def index
-
-      # robot_types = %w(Industrial
-      #                Consumer
-      #                Medical)
+      robot_types = %w(Industrial
+                     Consumer
+                     Medical)
+      # robot_types = params[:robot_types]
+      robot_types = ["Medical", "Industrial"]
 
       if (params[:min_price] && params[:max_price])
-        @robots = Robot.where('price > ? AND price < ?', params[:min_price], params[:max_price])
+        @robots = Robot.where('price BETWEEN ? AND ?', params[:min_price], params[:max_price])
       else
-        @robots = Robot.all
-        # @robots = Robot.where('robot_type IN ?', robot_types)
-      # @robots = Robot.where(:robot_type => robot_types)
+        # @robots = Robot.all
+        @robots = Robot.where(robot_type: robot_types)
       end
       render json: @robots
     end
 
-    # def index
-    #   # robot_types =["Consumer", "Industrial"]
-    #   # @robots = Robot.all
-    #   # new_robots = @robots.select { |robot|  robot_types.include?(robot)}
-    #   # debugger
-    #   # console.log('test')
-    #   # @robots = Robot.where('robot_type IN ?', robot_types)
-    #   @robots = Robot.all
-    #   render json: @robots
-    # end
-
     def show
-
       @robot = Robot.find(params[:id])
-
       if @robot
         render :show
       else
@@ -59,5 +46,6 @@ module Api
     def robot_params
       params.require(:robot).permit(:title)
     end
+
   end
 end

@@ -19,11 +19,9 @@
 //= require underscore
 //= require backbone
 //= require bootstrap
-
 //= require bootstrap-sprockets
-
 //= require rent_my_robot
-
+//= require jquery.serializejson
 //= require_tree ../templates
 //= require_tree ./utils
 //= require_tree ./models

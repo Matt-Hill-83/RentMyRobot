@@ -29,8 +29,8 @@ RentMyRobot.Views.RobotList = Backbone.CompositeView.extend({
   },
 
   removeRobotItem: function (robot) {
-    var subview = _(this.subviews('#robot-item-container')).findWhere(function (subview) {
-      return subview.model == robot;
+    var subview = _(this.subviews('#robot-item-container')).find(function (subview) {
+      return subview.model === robot;
     })
     this.removeSubview('#robot-item-container', subview);
   }

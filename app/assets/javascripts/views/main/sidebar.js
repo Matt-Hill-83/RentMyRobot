@@ -3,8 +3,12 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
 
   className: 'sidebar-class row search-item-list', // gets assigned to $el, which is a div by default
 
+  events: {
+    "change form": "searchRobots"
+  },
+
   initialize: function () {
-    this.listenTo(this.collection, 'sync', this.render); 
+    this.listenTo(this.collection, 'sync', this.render);
     this.addRobotsIndex();
     this.addFilters();
   },
@@ -32,3 +36,11 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
     return this;
   }
 });
+
+
+// give ids to all relevant fields
+// set up listeners to ids
+// function (event) {
+//  var $data = $(event.currentTarget).serializeJSON();
+
+// }
