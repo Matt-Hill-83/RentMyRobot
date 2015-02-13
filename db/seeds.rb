@@ -19,19 +19,27 @@ def create_robot!(i)
                   chPanW0QWhA
                   wE3fmFTtP9g
                   chPanW0QWhA)
-  image_urls = %w(robot0
-                  RobotBird
-                  robot0
-                  RobotBird
-                  robot0
-                  RobotBird)
+  image_urls = %w(
+                  aa-aisimo
+                  aa-cheetah
+                  aa-flea
+                  aa-honda-lawn
+                  aa-mars
+                  aa-ping-pong
+                  aa-honda-lawn
+                  aa-mars
+                  aa-ping-pong
+                  aa-snake1
+                  aa-water-snake
+                )
   lorem_text = "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
   Robot.create!(
     name: names[i%(names.length-1)],
     manufacturer: manufacturers[i%(manufacturers.length-1)],
     video_url: video_urls[i%(video_urls.length-1)],
-    image_url: image_urls[i%(image_urls.length-1)]  + ".png",
+    image_url: image_urls[i]  + ".png",
+    # image_url: image_urls[i%(image_urls.length-1)]  + ".png",
     lat: rand() * 0.050 + 37.735,
     lng: rand() * 0.050 + -122.482,
     price: rand() * 1000 + 1000,
