@@ -16,12 +16,28 @@ module Api
       render json: {}
     end
 
+    # def index
+    #
+    #   robot_types = %w(Industrial
+    #                  Consumer
+    #                  Medical)
+    #
+    #   if (params[:min_price] && params[:max_price])
+    #     @robots = Robot.where('price > ? AND price < ?', params[:min_price], params[:max_price])
+    #   else
+    #     # @robots = Robot.all
+    #     @robots = Robot.where('robot_type IN ?', robot_types)
+    #   end
+    #   render json: @robots
+    # end
+
     def index
-      if (params[:min_price] && params[:max_price])
-        @robots = Robot.where('price > ? AND price < ?', params[:min_price], params[:max_price])
-      else
-        @robots = Robot.all
-      end
+      robot_types =["Consumer", "Industrial"]
+      @robots = Robot.all
+      new_robots = @robots.select { |robot|  robot_types.include?(robot)}
+      debugger
+      console.log('test')
+      @robots = Robot.where('robot_type IN ?', robot_types)
       render json: @robots
     end
 

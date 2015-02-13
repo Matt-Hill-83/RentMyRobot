@@ -36,14 +36,14 @@ def create_robot!(i)
     lng: rand() * 0.050 + -122.482,
     price: rand() * 1000 + 1000,
     description: lorem_text,
-    robot_type: %w('industrial'
-                  'consumer'
-                  'research'
-                  'military'
-                  'humanoid'
-                  'aerial'
-                  'other1'
-                  'other2').sample,
+    robot_type: %w(Industrial
+                   Consumer
+                   Research
+                   Military
+                   Humanoid
+                   Aerial
+                   Space
+                   Medical).sample,
   )
 end
 
