@@ -35,6 +35,7 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
     this.collection.fetch({
       data: $data
     });
+    var a = 2;
     }
   },
 

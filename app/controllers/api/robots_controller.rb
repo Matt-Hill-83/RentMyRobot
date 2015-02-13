@@ -26,8 +26,8 @@ module Api
       if (params[:min_price] && params[:max_price])
         @robots = Robot.where('price BETWEEN ? AND ?', params[:min_price], params[:max_price])
       else
-        # @robots = Robot.all
-        @robots = Robot.where(robot_type: robot_types)
+        @robots = Robot.all
+        # @robots = Robot.where(robot_type: robot_types)
       end
       render json: @robots
     end

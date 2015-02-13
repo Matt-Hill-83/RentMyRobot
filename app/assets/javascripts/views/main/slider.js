@@ -30,7 +30,11 @@ RentMyRobot.Views.Slider = Backbone.CompositeView.extend({
 
   fetchFilteredCollection: function (event, ui) {
     this.priceRange = ui.values;
-    debugger
+    // Set slider values to dummy inputs in form so that they will trigger a form change
+    // event and get set to the robot controller as the data in the fetch and
+    // be used to filter the data that is requested from the database.
+    this.$( "#slider_min_value" ).val(ui.values[0]);
+    this.$( "#slider_max_value" ).val(ui.values[1]);
     this.collection.fetch({
       data: { min_price: ui.values[0], max_price: ui.values[1] }
     });
