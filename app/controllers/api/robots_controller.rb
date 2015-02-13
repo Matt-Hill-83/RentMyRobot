@@ -44,7 +44,9 @@ module Api
     private
 
     def robot_params
-      params.require(:robot).permit(:title)
+      # params.require(:robot).permit(:title, )  {robot: {title: 'my title'}}
+      #                                           {filter: {checkboxes: ['']}}
+      params.require(:filters).permit!
     end
 
   end

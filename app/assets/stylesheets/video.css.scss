@@ -1,27 +1,30 @@
 /////////////// video stuff
 .embed-container {
   position: relative;
-  padding-bottom: 56.25%;
+  // padding-bottom: 56.25%;
   padding-top: 30px;
-  height: 0;
+  height: auto;
   overflow: hidden;
   max-width: 100%;
-  height: auto; }
-.embed-container iframe, .embed-container object,
-.embed-container embed {
-   top: 0px;
-   left: 0px;
-   width: 100%;
-   height: 100%;
-}
+  height: auto;
+  }
+// .embed-container iframe, .embed-container object,
+// .embed-container embed {
+//    top: 0px;
+//    left: 0px;
+//    width: 100%;
+//    height: 100%;
+// }
 #video-container {
   z-index: 10000;
   top: 25%;
   padding: 0px;
   // padding-left: 0px;
   margin: 0px;
+  width: 100%;
+  height: auto;
   position: fixed;
-
+  // border: 1px solid black;
 }
 #right-container {
   position: relative;
@@ -33,32 +36,32 @@
 
 
 ////////////////// root page
-.video-wrapper{
-  position: absolute;
-  height: auto;
-  overflow-y: hidden;
-  // margin-top: auto;
-  // margin-bottom: auto;
-  // margin: auto;
-  top: 50%;
-  margin-left: auto;
-  margin-right: auto;
+// .video-wrapper{
+//   position: absolute;
+//   height: auto;
+//   overflow-y: hidden;
+//   // margin-top: auto;
+//   // margin-bottom: auto;
+//   // margin: auto;
+//   top: 50%;
+//   margin-left: auto;
+//   margin-right: auto;
+//
+//   width: 95%;
+//   z-index: 10000;
+//   background: #A0D3FF;
+//   border: 1px solid black;
+//   float: left;
+//
+// }
+//
+// .my-video-class{
+//   position: relative;
+//   height: 100%;
+//   width: 100%;
+//   // bottom: -90px;
+//   top: 0px;
+//   overflow: hidden;
+//   float: left;
 
-  width: 95%;
-  z-index: 10000;
-  background: #A0D3FF;
-  border: 1px solid black;
-  float: left;
-
-}
-
-.my-video-class{
-  position: relative;
-  height: 100%;
-  width: 100%;
-  // bottom: -90px;
-  top: 0px;
-  overflow: hidden;
-  float: left;
-
-}
+// }

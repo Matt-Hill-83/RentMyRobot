@@ -35,9 +35,10 @@ RentMyRobot.Views.Slider = Backbone.CompositeView.extend({
     // be used to filter the data that is requested from the database.
     this.$( "#slider_min_value" ).val(ui.values[0]);
     this.$( "#slider_max_value" ).val(ui.values[1]);
-    this.collection.fetch({
-      data: { min_price: ui.values[0], max_price: ui.values[1] }
-    });
+    $("#filters-container").change();
+    // this.collection.fetch({
+    //   data: { min_price: ui.values[0], max_price: ui.values[1] }
+    // });
   },
 
   render: function () {
