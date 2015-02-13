@@ -5,7 +5,7 @@ RentMyRobot.Views.Main = Backbone.CompositeView.extend({
   id: 'main-div',
 
   events: {
-    'click div.robot-index-element-wrapper': 'panToListing',
+    'click div.robot-index-element-wrapper': 'panToListing', // fixme this is never used
     'mouseenter div.robot-index-element-wrapper': 'startBounce',
     'mouseleave div.robot-index-element-wrapper': 'stopBounce',
   },

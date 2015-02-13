@@ -4,11 +4,12 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
   className: 'sidebar-class row search-item-list', // gets assigned to $el, which is a div by default
 
   events: {
-    "change form": "searchRobots"
+    "change #filters-container": "searchRobots"
   },
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
+
     this.addRobotsIndex();
     this.addFilters();
   },
@@ -27,6 +28,15 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
     this.addSubview('#filters-container', filtersView);
   },
 
+  searchRobots: function (event) {
+    console.log('test');
+    newFunc = function (event) {
+    var $data = $(event.currentTarget).serializeJSON();
+    }
+    debugger
+    var a = 1 + 1
+  },
+
   render: function () {
     var content = this.template({
       collection: RentMyRobot.Collections.robots
@@ -38,9 +48,8 @@ RentMyRobot.Views.SideBar = Backbone.CompositeView.extend({
 });
 
 
-// give ids to all relevant fields
-// set up listeners to ids
-// function (event) {
-//  var $data = $(event.currentTarget).serializeJSON();
 
-// }
+//create hidden fields and write to them to allow us to capture the
+//change to the high and low limit markers
+//user serialize json to grab all the field in a form and send them
+// up to the controller.  It uses their ids for their name labels.
