@@ -6,7 +6,6 @@ RentMyRobot.Views.TestView = Backbone.CompositeView.extend({
 
   render: function() {
     myModel = this.collection.models[1];
-    debugger
     var content = this.template({
       model: myModel
     });

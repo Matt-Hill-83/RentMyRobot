@@ -27,7 +27,11 @@
 </style>
 
 
-<%=model.escape("video_url")%>
+<% if (model) { %>
+  <%=model.escape("video_url")%>
+<% }else{ %>
+  <%= 'no model'%>
+<%  };%>
 
 <div class="box-outer">
   <div class="box-inner my-red">
