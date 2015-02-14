@@ -2,57 +2,73 @@
 
 .box-outer {
   position: absolute;
-  background-color: blue;
+  background-color: cornflowerblue;
   height: 400px;
   width: 800px;
-
+  /*padding: 20px;*/
 }
 .box-inner {
   /*display: block;*/
   /*background-color: red;*/
   position: relative;
-  height: 50px;
-  width: 20px;
-  margin: auto;
+  height: auto;
+  /*width: auto;*/
+  width: 50%;
+  margin:  15px auto;
   /*float: top;*/
+  border: 5px solid black;
+  /*padding: 10px;*/
+  min-height: 20px;
+
+
 }
 .my-red{
   background-color: red;
   display: block;
 }
-.my-green{
+.my-yellow{
   background-color: yellow;
-  display: block;
+  /*display: block;*/
+}
+
+.myVideo1{
+  width: 100%;
+  margin: auto;
+  background-color: darksalmon;
+  border: 5px solid orange;
 }
 </style>
 
 
-<% if (model) { %>
+<!-- <% if (model) { %>
   <%=model.escape("video_url")%>
 <% }else{ %>
   <%= 'no model'%>
-<%  };%>
+<%  };%> -->
 
 <div class="box-outer">
   <div class="box-inner my-red">
   </div>
-  <div class="box-inner my-green">
+  <div class="box-inner my-yellow">
   </div>
 
   <div class="box-inner">
-    <video autoplay loop preload="auto"
+    <video class='myVideo1'
+           autoplay loop preload="auto"
            id="robot-video"
            class="video-playing tc-videoHost my-video-class">
       <source src="assets/mov_bbb.mp4" type="video/mp4">
     </video>
   </div>
 
-  <div class="video-wrapper">
-    <video autoplay loop preload="auto" id="robot-video" class="video-playing tc-videoHost my-video-class">
-      <source src="assets/mov_bbb.mp4" type="video/mp4">
-    </video>
+  <div class='box-outer my-yellow'>
+    <iframe
+      width="auto"
+      height="100%"
+      src="//www.youtube.com/embed/<%=model.escape("video_url")%>?autoplay=1&showinfo=0&controls=0"
+      frameborder="10"
+      allowfullscreen
+      />
   </div>
-
-
 
 </div>
