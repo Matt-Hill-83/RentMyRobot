@@ -4,10 +4,6 @@ RentMyRobot.Views.VideoShow = Backbone.CompositeView.extend({
 	initialize: function() {
 	},
 
-	// events: {
-	// 	"click .modal-submit-btn": "goToMain"
-	// },
-
 	render: function() {
 		var content = this.template({
 			model: this.model
