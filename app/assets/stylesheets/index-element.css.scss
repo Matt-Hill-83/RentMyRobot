@@ -1,6 +1,18 @@
+ #robot-list-container {
+   padding: 0px;
+   float: left;
+   background-color: yellow;
+ }
+ #robot-item-container {
+   float: left;
+   background-color: #F5F5F5;
+  //  padding: 0px;
+   border-top: 1px solid #DDE0E0;
+   padding: 15px 0px 0px 15px;
+ }
 .robot-index-element-wrapper {
   display: inline-block;
-  padding: 15px;
+  padding: 0px 15px 15px 0px;
   width: 25%;
   float: top;
  }
@@ -27,17 +39,7 @@
     font-family: "Times New Roman", Georgia, Serif;
  }
 
- #robot-list-container {
-   padding: 0px;
-   float: left;
-   background-color: yellow;
- }
- #robot-item-container {
-   float: left;
-   background-color: #F5F5F5;
-   padding: 0px;
-   border-top: 1px solid #DDE0E0;
- }
+////// Overlays
  .overlay-price-text {
    color: rgb(110, 110, 110);
  }
