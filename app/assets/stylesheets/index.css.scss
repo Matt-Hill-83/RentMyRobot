@@ -3,17 +3,7 @@
   background-color: white;
   margin: 0px;
 }
-#robot-list-container {
-  padding: 0px;
-  float: left;
-  background-color: yellow;
-}
-#robot-item-container {
-  float: left;
-  background-color: #F5F5F5;
-  padding: 0px;
-  border-top: 1px solid #DDE0E0;
-}
+
 #container1 {
   background-color: red;
 }
@@ -26,4 +16,16 @@
   background-color: white;
   position: relative;
   float: left;
+}
+
+#robot-list-container {
+  padding: 0px;
+  float: left;
+  background-color: yellow;
+}
+#robot-item-container {
+  float: left;
+  background-color: #F5F5F5;
+  border-top: 1px solid #DDE0E0;
+  padding: 15px 0px 0px 15px;
 }
