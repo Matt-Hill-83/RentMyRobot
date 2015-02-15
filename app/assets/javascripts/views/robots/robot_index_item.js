@@ -22,6 +22,7 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
     this.videoView = new RentMyRobot.Views.VideoShow({
       model: this.model
     });
+    // $('#right-container').html(this.videoView.render().$el);
     $('#video-container').html(this.videoView.render().$el);
   },
 

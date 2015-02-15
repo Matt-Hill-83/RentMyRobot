@@ -1,8 +1,8 @@
 RentMyRobot.Views.VideoShow = Backbone.CompositeView.extend({
 	template: JST['video/show'],
+	className: 'video-show-jst',
 
-	initialize: function() {
-	},
+	initialize: function() {},
 
 	render: function() {
 		var content = this.template({
