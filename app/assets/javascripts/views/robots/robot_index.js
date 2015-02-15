@@ -18,6 +18,13 @@ RentMyRobot.Views.RobotList = Backbone.CompositeView.extend({
     this.addSubview('#robot-item-container', robotListView);
   },
 
+  removeRobotItem: function (robot) {
+    var subview = _(this.subviews('#robot-item-container')).find(function (subview) {
+      return subview.model === robot;
+    })
+    this.removeSubview('#robot-item-container', subview);
+  },
+
   render: function () {
     var that = this;
     var content = this.template({
@@ -26,12 +33,6 @@ RentMyRobot.Views.RobotList = Backbone.CompositeView.extend({
     this.$el.html(content);
     this.attachSubviews();
     return this;
-  },
-
-  removeRobotItem: function (robot) {
-    var subview = _(this.subviews('#robot-item-container')).find(function (subview) {
-      return subview.model === robot;
-    })
-    this.removeSubview('#robot-item-container', subview);
   }
+
 });
