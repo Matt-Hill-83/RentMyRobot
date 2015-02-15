@@ -1,7 +1,7 @@
 RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
   // Create an attribute on this $el so that I can store the robot id
   // in the DOM.  Then when I hover on the element, I can grab the
-  // robot id from the even and use it to make the right pin bounce.
+  // robot id from the event and use it to make the right pin bounce.
   attributes: function () {
     return { 'data-robot-id': this.model.id };
   },
