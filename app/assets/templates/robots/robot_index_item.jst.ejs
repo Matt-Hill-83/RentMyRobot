@@ -1,12 +1,13 @@
 <div class="robot-index-element-image-wrapper">
+  <button type="button" class=" btn-video">
+  <!-- <button type="button" class="btn btn-default btn-sm btn-video"> -->
+    Video  <span class="glyphicon glyphicon-hd-video"></span>
+  </button>
   <a href="#/robots/<%= robot.id %>">
     <img src="assets/<%= robot.escape('image_url') %>"
         alt="Picture your robot here1!"
-        class="robot-index-image">
+        class="robot-index-image"/>
   </a>
-  <button type="button" class="btn btn-default btn-sm btn-video">
-    Video  <span class="glyphicon glyphicon-hd-video"></span>
-  </button>
 </div>
 
 <left>
@@ -14,10 +15,10 @@
   (<%= robot.escape('robot_type') %>), by <%= robot.escape('manufacturer') %>
 </left>
 
-<a href="#/robot/<%=robot.escape("id")%>">
+<!-- <a href="#/robot/<%=robot.escape("id")%>">
   <div class="overlay-price-text">
     <div class="overlay-price-box">
       <div class="overlay-price-symbol">$</div><h2 class="overlay-price-value"><%=robot.escape('price')%></h2>
     </div>
   </div>
-</a>
+</a> -->

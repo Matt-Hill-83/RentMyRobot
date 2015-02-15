@@ -1,29 +1,8 @@
-.btn-video{
-  position: fixed;
-  width: 110px;
-  height: auto;
-  background-color: black;
-}
 .robot-index-element-wrapper {
  display: inline-block;
- padding: 15px;
+ padding: 0px 15px 15px 0px;
  width: 25%;
  float: top;
-}
-.robot-index-element-details {
-  background-color: #F5F5F5;
-  float: top;
-  font-size: 16px;
-   overflow-x: hidden;
-   overflow-y: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
-   font-family: "Times New Roman", Georgia, Serif;
-
-}
-.robot-index-element-caption {
-  background-color: red;
-  float: top;
 }
 .robot-index-element-image-wrapper {
  background-color: white;
@@ -37,8 +16,24 @@
    width: 100%;
    height: auto;
 }
-.robot-show-image {
- width: 100%;
+.btn-video{
+  position: relative;
+  // margin-top:  15%;
+  // width: 110px;
+  // height: auto;
+  float: left;
+  background-color: white;
+}
+.robot-index-element-details {
+  background-color: #F5F5F5;
+  float: top;
+  font-size: 16px;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   font-family: "Times New Roman", Georgia, Serif;
+
 }
 /////////////// image overlays
 .overlay-price-text {
@@ -60,4 +55,10 @@
 .overlay-price-value {
   margin-top: 7px;
   margin-left: 20px;
+}
+
+
+/////move this guy
+.robot-show-image {
+ width: 100%;
 }

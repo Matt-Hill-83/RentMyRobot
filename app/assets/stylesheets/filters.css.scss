@@ -43,12 +43,10 @@
  position: absolute;
  height: 60px;
  width: 100%;
- // white-space: nowrap;
 }
 .filter3a {
   height: 80px;
   padding: 10px;
- //  background-color: coral;
   background-color: white;
   width: 15%;
   float: left;
@@ -66,9 +64,7 @@
   float: top;
   vertical-align: middle;
 }
-.separator-bar {
-  margin: 2px;
-}
+
 .filter-capsule {
   height: auto;
   min-height: 10px;
@@ -80,28 +76,7 @@
 .slider-capsule {
 }
 ///////////////
-#container2 {
-  background-color: ghostwhite;
-}
-#map-container {
-  padding: 0px;
-  background-color: white;
-  margin: 0px;
-}
-#robot-list-container {
-  padding: 0px;
-  float: left;
-  background-color: yellow;
-}
-#robots-list {
-  background-color: yellow;
-}
-#robot-item-container {
-  float: left;
-  background-color: #F5F5F5;
-  padding: 0px;
-  border-top: 1px solid #DDE0E0;
-}
+
 #filters-container {
   float: top;
   background-color: white;
