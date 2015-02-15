@@ -1,3 +1,48 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.header_div {
+  text-align: center;
+}
+
+.robot-index-image_div {
+
+  // background-color: bisque;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding-top: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+  padding-left: 10%;
+}
+
+.robot-index-image {
+
+  height: auto;
+  width: auto;
+  // margin-left: 50%;
+  // margin-right: 50%;
+}
+
+.robot_index_element_div {
+  background-color: white;
+  // position: relative;
+  // float: top;
+  border-style: solid;
+  border-width: 2px;
+  margin: 10px;
+
+}
+
+.robot-index-element-image-div {
+  background-color: bisque;
+  float: left;
+}
+
+.robot_index_element_details_div {
+  background-color: beige;
+  float: left;
+}
