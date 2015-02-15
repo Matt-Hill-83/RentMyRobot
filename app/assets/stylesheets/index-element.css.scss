@@ -6,7 +6,6 @@
  #robot-item-container {
    float: left;
    background-color: #F5F5F5;
-  //  padding: 0px;
    border-top: 1px solid #DDE0E0;
    padding: 15px 0px 0px 15px;
  }
@@ -16,7 +15,14 @@
   width: 25%;
   float: top;
  }
- .robot-index-element-image-wrapper {
+.btn-video{
+  position: absolute;
+  float: right;
+  top: -2;
+  z-index: 1000;
+  display: block;
+}
+.robot-index-element-image-wrapper {
   background-color: white;
   display: inline-block;
   float: top;
@@ -25,6 +31,7 @@
   border-width: 1px;
  }
 .robot-index-image {
+   position: relative;
    width: 100%;
    height: auto;
 }
