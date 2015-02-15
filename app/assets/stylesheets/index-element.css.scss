@@ -20,8 +20,13 @@
   float: right;
   top: -2;
   z-index: 1000;
+  display: none;
+}
+
+.robot-index-element-wrapper:hover .btn-video{
   display: block;
 }
+
 .robot-index-element-image-wrapper {
   background-color: white;
   display: inline-block;
@@ -67,6 +72,7 @@
    margin-top: 7px;
    margin-left: 20px;
  }
+
 
 
 
