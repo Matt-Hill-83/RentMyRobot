@@ -1,0 +1,48 @@
+.robot-index-element-wrapper {
+  display: inline-block;
+  padding: 15px;
+  width: 25%;
+  float: top;
+ }
+ .robot-index-element-image-wrapper {
+  background-color: white;
+  display: inline-block;
+  float: top;
+  border-style: solid;
+  width: 100%;
+  border-width: 1px;
+ }
+.robot-index-image {
+   width: 100%;
+   height: auto;
+}
+.robot-index-element-details {
+   background-color: #F5F5F5;
+   float: top;
+   font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Times New Roman", Georgia, Serif;
+ }
+
+ #robot-list-container {
+   padding: 0px;
+   float: left;
+   background-color: yellow;
+ }
+ #robot-item-container {
+   float: left;
+   background-color: #F5F5F5;
+   padding: 0px;
+   border-top: 1px solid #DDE0E0;
+ }
+
+
+
+
+/////move this
+ .robot-show-image {
+  width: 100%;
+ }

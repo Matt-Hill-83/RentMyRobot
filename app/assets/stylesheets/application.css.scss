@@ -53,48 +53,7 @@
    height: 90vh;
    overflow-y: scroll;
  }
- .robot-index-element-wrapper {
-  display: inline-block;
-  padding: 15px;
-  width: 25%;
-  float: top;
- }
- .separator-bar {
-  border-color: #123455;
-  background-color: #123455;
-  color: #123455;
- }
-/////////////// robot index image element
- .robot-index-element-caption {
-   background-color: red;
-   float: top;
- }
- .robot-index-element-image-wrapper {
-  background-color: white;
-  display: inline-block;
-  float: top;
-  border-style: solid;
-  width: 100%;
-  border-width: 1px;
- }
- .robot-index-image {
-    width: 100%;
-    height: auto;
- }
- .robot-show-image {
-  width: 100%;
- }
- .robot-index-element-details {
-   background-color: #F5F5F5;
-   float: top;
-   font-size: 16px;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-family: "Times New Roman", Georgia, Serif;
 
- }
  /////////////// image overlays
  .overlay-price-text {
    color: rgb(110, 110, 110);
@@ -115,8 +74,4 @@
  .overlay-price-value {
    margin-top: 7px;
    margin-left: 20px;
- }
- .col-centered{
-   float: none;
-   margin: 0 auto;
  }
