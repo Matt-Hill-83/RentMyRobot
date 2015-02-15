@@ -3,20 +3,30 @@
 .box-outer {
   position: absolute;
   background-color: cornflowerblue;
-  height: 400px;
-  width: 800px;
+  height: 600px;
+  width: 900px;
 }
 .box-inner {
   position: relative;
-  width: 50%;
+  width: auto;
+  min-height: 60px;
+  height: auto;
+  margin:  15px 15%;
+  border: 5px solid black;
+}
+.image1{
+  position: relative;
+  min-width: 20px;
   min-height: 20px;
   height: auto;
-  margin:  15px auto;
-  border: 5px solid black;
+  width: 50%;
+  margin: 15px auto;
+  background-color: green;
+  border: 1px solid black;
+  display: block;
 }
 .my-red{
   width: 80%;
-
   background-color: red;
   display: block;
 }
@@ -26,26 +36,24 @@
 }
 
 .myVideo1{
-  width: 100%;
+  position: relative;
+  width: 50%;
   height: auto;
-  margin: auto;
+  margin: 20px auto;
   margin-bottom: -6px;
   background-color: darksalmon;
   border: 5px solid orange;
+  display: block;
 }
+
 </style>
-
-
-<!-- <% if (model) { %>
-  <%=model.escape("video_url")%>
-<% }else{ %>
-  <%= 'no model'%>
-<%  };%> -->
 
 <div class="box-outer">
   <div class="box-inner my-red">
   </div>
   <div class="box-inner my-yellow">
+    <img src="assets/<%= model.escape('image_url') %>"
+         class='image1'>
   </div>
 
   <div class="box-inner">
@@ -54,20 +62,11 @@
            id="robot-video"
 
            >
-      <source src="assets/video/mov_bbb.mp4"
-      <!-- <source src="assets/video/big_dog.mp4" -->
+      <source src="assets/video/big_dog.mp4"
               type="video/mp4">
     </video>
   </div>
 
-  <!-- <div class='box-outer my-yellow'>
-    <iframe
-      class='myVideo1'
-      height="100%"
-      src="assets/video/mov_bbb.mp4"
-      frameborder="10"
-      allowfullscreen
-      />
-  </div> -->
+      <!-- <source src="assets/video/mov_bbb.mp4" -->
 
 </div>

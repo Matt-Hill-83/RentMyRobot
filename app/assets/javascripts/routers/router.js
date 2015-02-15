@@ -5,7 +5,7 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
 
   routes: {
     '':'showRoot',
-    '':'test',
+    // '':'test',
     'main': 'main',
     'robots/:id': 'robotShow',
   },

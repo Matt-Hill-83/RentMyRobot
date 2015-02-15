@@ -1,0 +1,84 @@
+ #robot-list-container {
+   padding: 0px;
+   float: left;
+   background-color: yellow;
+ }
+ #robot-item-container {
+   float: left;
+   background-color: #F5F5F5;
+   border-top: 1px solid #DDE0E0;
+   padding: 15px 0px 0px 15px;
+ }
+.robot-index-element-wrapper {
+  display: inline-block;
+  padding: 0px 15px 15px 0px;
+  width: 25%;
+  float: top;
+ }
+.btn-video{
+  position: absolute;
+  float: right;
+  top: -2;
+  z-index: 1000;
+  display: none;
+}
+
+.robot-index-element-wrapper:hover .btn-video{
+  display: block;
+}
+
+.robot-index-element-image-wrapper {
+  background-color: white;
+  display: inline-block;
+  float: top;
+  border-style: solid;
+  width: 100%;
+  border-width: 1px;
+ }
+.robot-index-image {
+   position: relative;
+   width: 100%;
+   height: auto;
+}
+.robot-index-element-details {
+   background-color: #F5F5F5;
+   float: top;
+   font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: "Times New Roman", Georgia, Serif;
+ }
+
+////// Overlays
+ .overlay-price-text {
+   color: rgb(110, 110, 110);
+ }
+ .overlay-price-box {
+   position: absolute;
+   width: 95px;
+   height: 42px;
+   margin-top: -90px;
+   color: rgb(255, 255, 255);
+   background-color: rgba(55, 55, 55, 0.85);
+ }
+ .overlay-price-symbol {
+   position: absolute;
+   margin-left: 7px;
+   margin-top: 8px;
+ }
+ .overlay-price-value {
+   margin-top: 7px;
+   margin-left: 20px;
+ }
+
+
+
+
+
+
+/////move this
+ .robot-show-image {
+  width: 100%;
+ }
