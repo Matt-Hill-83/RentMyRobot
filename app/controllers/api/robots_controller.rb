@@ -30,16 +30,21 @@ module Api
         slider_max_value = params['slider_max_value']
         robot_types = params['filters']['checkboxes']
         msg = 'all 3'
-        @robots = Robot.where('price BETWEEN ? AND ?', slider_min_value, slider_max_value)
+        @robots = Robot
+          .where('price BETWEEN 5 AND 9000')
+          .where(robot_type: robot_types)
+
+        # @robots = Robot.where('(price > 5)' AND (robot_type: robot_types), slider_min_value, slider_max_value)
+        # @robots = Robot.where(('price BETWEEN 5 AND 9000')), slider_min_value, slider_max_value)
 
       elsif (params['slider_min_value'] &&
-          params['slider_min_value'] != "" &&
-          params['slider_max_value'] &&
-          params['slider_max_value'] != "")
+             params['slider_min_value'] != "" &&
+             params['slider_max_value'] &&
+             params['slider_max_value'] != "")
         slider_min_value = params['slider_min_value']
         slider_max_value = params['slider_max_value']
         @robots = Robot.where('price BETWEEN ? AND ?', slider_min_value, slider_max_value)
-        msg = 'jsut 2'
+        msg = 'just sliders'
 
       elsif (params['filters'] &&
              params['filters']['checkboxes'])
@@ -51,7 +56,7 @@ module Api
         msg = 'all'
         @robots = Robot.all
       end
-      # debugger
+      debugger
       render json: @robots
     end
 
@@ -67,8 +72,6 @@ module Api
     private
 
     def robot_params
-      # params.require(:robot).permit(:title, )  {robot: {title: 'my title'}}
-      #                                           {filter: {checkboxes: ['']}}
       params.require(:filters).permit!
     end
 
