@@ -1,19 +1,26 @@
 
 .buttons {
   text-align: center;
-    // button {
-      margin: 5px;
-    // }
+  margin: 5px;
 }
 
 .login-container{
   z-index: 1000;
   position: absolute;
-  top: 300px;
+  // top: 325px;
+  bottom: 15px;
   left: 50%;
 }
 
 .inner-container{
   position: relative;
   left: -50%;
+}
+
+.image-container{
+  position: relative;
+}
+
+.email-input{
+  width: 300px;
 }
