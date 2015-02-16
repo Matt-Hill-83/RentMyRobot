@@ -17,10 +17,7 @@ module Api
     end
 
     def index
-
-      # fixme If I check a box after the slider is set, new slider values don't get sent to
-      # controller
-
+      # If slider values and checkbox values are received, perform a filtered query
       if (params['slider_min_value'] &&
           params['slider_min_value'] != "" &&
           params['slider_max_value'] &&
@@ -33,32 +30,22 @@ module Api
         @robots = Robot
           .where('price BETWEEN ? AND ?', slider_min_value, slider_max_value)
           .where(robot_type: robot_types)
-          # .where('price BETWEEN slider_min_value AND slider_max_value')
-          # .where('price BETWEEN 5 AND 9000')
 
-        # @robots = Robot.where('(price > 5)' AND (robot_type: robot_types), slider_min_value, slider_max_value)
-        # @robots = Robot.where('price BETWEEN ? AND ?'), slider_min_value, slider_max_value)
-
+      # If slider values are recieved, but no checkbox values, return nothing
       elsif (params['slider_min_value'] &&
              params['slider_min_value'] != "" &&
              params['slider_max_value'] &&
              params['slider_max_value'] != "")
         slider_min_value = params['slider_min_value']
         slider_max_value = params['slider_max_value']
-        @robots = Robot.where('price BETWEEN ? AND ?', slider_min_value, slider_max_value)
+        @robots = nil
         msg = 'just sliders'
-
-      elsif (params['filters'] &&
-             params['filters']['checkboxes'])
-        msg = 'only 1'
-        robot_types = params['filters']['checkboxes']
-        @robots = Robot.where(robot_type: robot_types)
-
+      #If neither slider values nor checkbox values are sent, return all robots.
       else
         msg = 'all'
         @robots = Robot.all
       end
-      debugger
+      # debugger
       render json: @robots
     end
 
