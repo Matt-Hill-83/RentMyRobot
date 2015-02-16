@@ -31,11 +31,13 @@ module Api
         robot_types = params['filters']['checkboxes']
         msg = 'all 3'
         @robots = Robot
-          .where('price BETWEEN 5 AND 9000')
+          .where('price BETWEEN ? AND ?', slider_min_value, slider_max_value)
           .where(robot_type: robot_types)
+          # .where('price BETWEEN slider_min_value AND slider_max_value')
+          # .where('price BETWEEN 5 AND 9000')
 
         # @robots = Robot.where('(price > 5)' AND (robot_type: robot_types), slider_min_value, slider_max_value)
-        # @robots = Robot.where(('price BETWEEN 5 AND 9000')), slider_min_value, slider_max_value)
+        # @robots = Robot.where('price BETWEEN ? AND ?'), slider_min_value, slider_max_value)
 
       elsif (params['slider_min_value'] &&
              params['slider_min_value'] != "" &&
