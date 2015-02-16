@@ -7,8 +7,11 @@ RentMyRobot.Views.Slider = Backbone.CompositeView.extend({
   },
 
   initializePriceRange: function () {
-    this.$( "#min-price" ).html( '$' + this.priceRange[0]);  // fixme need to reorder these renders
-    this.$( "#max-price" ).html( '$' + this.priceRange[1]);  // fixme need to reorder these renders
+    this.$( "#min-price" ).html( '$' + this.priceRange[0]);
+    this.$( "#max-price" ).html( '$' + this.priceRange[1]);
+    this.$( '.type_checkbox' ).checked = true;
+    this.$( '.type_checkbox' ).checked = true;
+
   },
 
   setupSlider: function () {
