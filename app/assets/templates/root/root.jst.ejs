@@ -1,5 +1,32 @@
 <div>
 	<img class="root-banner-image" src="assets/kuka-700x294.png">
+
+	<!-- outer container that is positioned absolutely -->
+	<div class="login-container">
+		<!-- inner container that is relative to help with centering -->
+			<div class="inner-container">
+			<!-- cute box for buttons -->
+			<div class="modal-content">
+				<div class="modal-body">
+
+						<div class="form-group">
+							<label>Email</label>
+							<input id='email' type='email' class="form-control" name='user[email]'>
+						</div>
+						<div class="form-group">
+							<label>Password</label>
+							<input id='password' type='password' class="form-control" name='user[password]'>
+						</div>
+						<div class="form-group buttons">
+							<button id='login-submit' class='btn btn-primary modal-submit-btn'>Submit</button>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div>
 
 <div class="root-image-overlay-text">
@@ -11,41 +38,26 @@
 	<h2 class="root-intro-text-1">Rent My Robot</h2>
 	<div class="root-intro-text-2">"Find a mechatronic friend."</div>
 
-	<div class=" col-sm-2"></div>
+	<!-- <div class=" col-sm-2"></div> -->
 	<div class=" col-sm-4">
 		<img src="assets/portland-640x960.png" class="splash-city-image">
-		<div class="splash-city-image-text">Portland</div>
+		<div class="splash-city-image-text">Consumer</div>
 	</div>
 	<div class=" col-sm-4">
 		<img src="assets/portland-640x960.png" class="splash-city-image">
-		<div class="splash-city-image-text">San Francisco</div>
+		<div class="splash-city-image-text">Research</div>
 	</div>
-	<div class=" col-sm-2"></div>
+	<div class=" col-sm-4">
+		<img src="assets/portland-640x960.png" class="splash-city-image">
+		<div class="splash-city-image-text">Aerial</div>
+	</div>
+	<!-- <div class=" col-sm-2"></div> -->
 	</div>
 </div>
 
-<div id="modal" class="modal fade">
-	<div class="modal-dialog modal-sm">
-		<div class="modal-content">
-			<div class="modal-body">
 
-					<div class="form-group">
-						<label>Email</label>
-						<input id='email' type='email' class="form-control" name='user[email]'>
-					</div>
-					<div class="form-group">
-						<label>Password</label>
-						<input id='password' type='password' class="form-control" name='user[password]'>
-					</div>
-					<div class="form-group buttons">
-						<button id='login-submit' class='btn btn-primary modal-submit-btn'>Submit</button>
 
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
+
 
 
 <script type="text/javascript">

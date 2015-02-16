@@ -1,10 +1,19 @@
-.modal-body
-  li {
-    list-style-type: none;
-  }
-  .buttons {
-    text-align: center;
-      button {
-        margin: 5px;
-      }
+
+.buttons {
+  text-align: center;
+    // button {
+      margin: 5px;
+    // }
+}
+
+.login-container{
+  z-index: 1000;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+}
+
+.inner-container{
+  position: relative;
+  left: -50%;
 }
