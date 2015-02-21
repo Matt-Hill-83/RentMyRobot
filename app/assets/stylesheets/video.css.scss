@@ -19,13 +19,16 @@
   min-height: 20px;
   height: auto;
   margin:  15px auto;
+  margin:  -50% auto;
   display: block;
 }
 
 .myVideo1{
+  position: relative;
   width: 100%;
   height: auto;
-  margin: auto;
+  // margin: auto;
+  // margin-top: -50%;
   margin-bottom: -6px;
   background-color: black;
   border: 2px solid black;
