@@ -10,8 +10,10 @@
   </a>
 </div>
 
-<left><a href="#/robots/<%= robot.id %>"><%= robot.escape('name') %></a>
-  (<%= robot.escape('robot_type') %>), by <%= robot.escape('manufacturer') %>
+<left>
+  <%= robot.escape('name') %> (<%= robot.escape('robot_type') %>), 
+  <br>
+  <%= robot.escape('manufacturer') %>
 </left>
 
 <a href="#/robot/<%=robot.escape("id")%>">
