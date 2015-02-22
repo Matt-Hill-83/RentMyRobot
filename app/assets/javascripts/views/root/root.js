@@ -6,20 +6,20 @@ RentMyRobot.Views.Root = Backbone.CompositeView.extend({
 
 	events: {
 		'click button#glogin-root': 'guestLogIn',
-		'click button#login-root': 'goToIndex'
+		'click button#login-root': 'goToMain'
 	},
 
 	guestLogIn: function(event){
 		event.preventDefault();
 
-		$('#sign-in-email').val('masahiromori@robitx.com');
+		$('#sign-in-email').val('bfuller@robitx.com');
 		$('#sign-in-password').val('123456');
 		setTimeout(function(){
 			$('#login-root').click();
-		}, 750);
+		}, 1500);
 	},
 
-	goToIndex: function(event){
+	goToMain: function(event){
 		Backbone.history.navigate("main", {trigger: true});
 	},
 
