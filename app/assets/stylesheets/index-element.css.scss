@@ -22,7 +22,10 @@
   float: top;
   border-style: solid;
   width: 100%;
-  border-width: 1px;
+  border-width: 1px !important;
+  border-color: grey;
+  border-radius: 10px;
+  overflow: hidden;
  }
 .robot-index-image {
    position: relative;
@@ -48,7 +51,7 @@
    position: absolute;
    width: 95px;
    height: 42px;
-   margin-top: -90px;
+   margin-top: -100px;
    color: rgb(255, 255, 255);
    background-color: rgba(55, 55, 55, 0.85);
  }
@@ -61,10 +64,11 @@
    margin-top: 7px;
    margin-left: 20px;
  }
-
-
-
-
+ .image-text-container {
+   background-color: yellow;
+   height: 100%;
+   width: 100%;
+ }
 
 
 /////move this

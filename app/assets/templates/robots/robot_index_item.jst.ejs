@@ -8,13 +8,17 @@
         alt="Picture your robot here1!"
         class="robot-index-image"/>
   </a>
+
+  <div class='image-text-container'>
+    <left>
+      <%= robot.escape('name') %> (<%= robot.escape('robot_type') %>)
+      <br>
+      <%= robot.escape('manufacturer') %>
+    </left>
+  </div>
+  
 </div>
 
-<left>
-  <%= robot.escape('name') %> (<%= robot.escape('robot_type') %>) 
-  <br>
-  <%= robot.escape('manufacturer') %>
-</left>
 
 <a href="#/robot/<%=robot.escape("id")%>">
   <div class="overlay-price-text">
