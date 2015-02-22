@@ -51,7 +51,9 @@
    position: absolute;
    width: 95px;
    height: 42px;
-   margin-top: -100px;
+  //  margin-top: -100px;
+  //  margin-bottom: 1180px;
+   margin-top: -10%;
    color: rgb(255, 255, 255);
    background-color: rgba(55, 55, 55, 0.85);
  }
@@ -65,9 +67,14 @@
    margin-left: 20px;
  }
  .image-text-container {
-   background-color: yellow;
+   background-color: white;
    height: 100%;
    width: 100%;
+   padding-left: 10px;
+   padding-top: 6px;
+   padding-bottom: 2px;
+   border-top: 1px solid grey;
+   color: grey;
  }
 
 
