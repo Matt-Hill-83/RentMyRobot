@@ -45,7 +45,6 @@ module Api
         msg = 'all'
         @robots = Robot.all
       end
-      # debugger
       render json: @robots
     end
 
