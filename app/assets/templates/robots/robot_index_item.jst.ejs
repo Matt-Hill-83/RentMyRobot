@@ -1,9 +1,13 @@
 <div class="robot-index-element-image-wrapper">
-  <button type="button" class="btn-video">
-  <!-- <button type="button" class="btn btn-default btn-sm btn-video"> -->
-    Video  <span class="glyphicon glyphicon-hd-video"></span>
-  </button>
   <div class='image-container'>
+
+    <div class='button-container'>
+      <button type="button" class="btn-video">
+        Video
+        <span class="glyphicon glyphicon-hd-video"></span>
+      </button>
+    </div>
+    
     <a href="#/robots/<%= robot.id %>">
       <img src="assets/<%= robot.escape('image_url') %>"
           alt="Picture your robot here1!"
@@ -17,7 +21,7 @@
         </div>
       </div>
     </a>
-    
+
   </div>
 
   <div class='image-text-container'>
