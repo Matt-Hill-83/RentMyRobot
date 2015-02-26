@@ -58,7 +58,9 @@
    position: absolute;
    width: 95px;
    height: 42px;
-   margin-top: -10%;
+  //  margin-top: 0%;
+  bottom: 10%;
+  // top: 100px;
    color: rgb(255, 255, 255);
    background-color: rgba(55, 55, 55, 0.85);
  }
