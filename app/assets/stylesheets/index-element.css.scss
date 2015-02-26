@@ -23,7 +23,8 @@
   border-style: solid;
   width: 100%;
   border-width: 1px !important;
-  border-color: grey;
+  border-color: rgb(150,150,150);
+  // border-color: grey;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
@@ -36,7 +37,7 @@
    height: auto;
 }
  .robot-index-image:hover {
-	opacity: 0.8;
+	opacity: 0.9;
 }
 .robot-index-element-details {
    background-color: #F5F5F5;
