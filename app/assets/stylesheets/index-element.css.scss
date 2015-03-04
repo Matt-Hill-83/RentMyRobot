@@ -7,31 +7,19 @@
  }
 .button-container{
   position: absolute;
-  // float: right;
-  // bottom: -2;
-  // top: -2;
   z-index: 1000;
   display: none;
-  // overflow-x: hidden;
-  // overflow-y: hidden;
   margin-left: 50%;
   width: auto;
 
 }
 .btn-video{
   position: relative;
-  // z-index: 1000;
-  // overflow-x: hidden;
-  // overflow-y: hidden;
   left: -50%;
 }
 
-// .robot-index-element-wrapper:hover .btn-video{
 .robot-index-element-wrapper:hover .button-container{
   display: block;
-  // overflow-x: hidden;
-  // overflow-y: hidden;
-  // bottom: -2 !important;
 }
 
 .robot-index-element-image-wrapper {
