@@ -3,8 +3,9 @@
 .checkBoxesInnerWrapper {
   position: relative;
   min-height: 10px;
-  height: 84px;
+  height: 73px;
   overflow: hidden; // I'm not sure why this works.
+  background-color: white;
 }
 #check-boxes-container {
   float: top;
@@ -14,9 +15,9 @@
   float: left;
   background-color: #EDEFED;
   border: 1px solid #DDE0E0;
-  padding: 10px;
-  margin: 10px;
-  width: 120px;
+  padding: 4px 10px;
+  margin: 10px 20px;
+  width: 130px;
   white-space: nowrap;
 
 }
@@ -39,18 +40,17 @@
 .filter3a {
   position: relative;
   background-color: white;
-  background-color: red;
   margin: auto;
   width: 15%;
   height: 100%;
   float: left;
 }
 .filter3b {
-  background-color: yellow;
+  background-color: white;
   height: 100%;
   width: 85%;
   float: left;
-  padding: 0 10%;
+  padding: 0 5%;
 }
 .filter-label {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -83,6 +83,7 @@
 }
 .slider-capsule {
   height: 60px;
+  margin-bottom: 16px;
 }
 ///////////////
 
@@ -109,13 +110,13 @@
 }
 .min-price-div{
   position: absolute;
-  top: 10px;
-  left: 0px;
+  top: 21px;
+  left: -13px;
   // float: left;
 }
 .max-price-div{
   position: absolute;
-  top: 10px;
-  right: -30px;
+  top: 21px;
+  right: -10px;
   // float: right;
 }
