@@ -4,14 +4,11 @@
   position: relative;
   min-height: 10px;
   height: 84px;
-  // height: auto;
   overflow: hidden; // I'm not sure why this works.
 }
 #check-boxes-container {
   float: top;
-  background-color: green;
   padding: 0px;
-  border: 2px solid green;
 }
 #checkboxes-couplet {
   float: left;
@@ -26,24 +23,14 @@
 .filter2a {
   position: relative;
   background-color: white;
-  // height: 80px ;
   margin: auto;
-  // height: 80px ;
-  // width: 80px;
   width: 15%;
   float: left;
-  background-color: red;
-  border: 1px solid black;
   height: 100%;
-  // top: 50%;
-  // transform: translateY(-50%);
-  // margin-bottom: -99999px;
-  // padding-bottom: 99999px;
 }
 .filter2b {
   position: relative;
   background-color: white;
-  // height: 80px;
   height: auto;
   width: 85%;
   float: left;
@@ -52,7 +39,6 @@
 
 .filter3a {
   height: 80px;
-  // padding: 10px;
   background-color: white;
   width: 15%;
   float: left;
@@ -67,9 +53,6 @@
 }
 .filter-label {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  // float: top;
-  // vertical-align: middle;
-  background-color: yellow;
   position: relative;
   margin-left: 15px;
   top: 50%;
@@ -82,8 +65,6 @@
 .checkboxes-capsule {
   position: relative;
   height: auto;
-  background-color: yellow;
-  // margin: auto;
   overflow: hidden; // I'm not sure why this works.
   left: 50%;
   transform: translateX(-50%);
@@ -109,6 +90,6 @@
   padding: 0px;
   position: relative;
 }
-// #filters[checkboxes][]{
-//   background-color: black;
-// }
+.my-hr{
+  margin: 0 auto;
+}
