@@ -36,20 +36,21 @@
   float: left;
   margin: 0;
 }
-
 .filter3a {
-  height: 80px;
+  position: relative;
   background-color: white;
+  background-color: red;
+  margin: auto;
   width: 15%;
+  height: 100%;
   float: left;
 }
 .filter3b {
-  background-color: white;
-  height: 80px;
+  background-color: yellow;
+  height: 100%;
   width: 85%;
   float: left;
-  top: calc(50% - .4em);
-
+  padding: 0 10%;
 }
 .filter-label {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -57,10 +58,16 @@
   margin-left: 15px;
   top: 50%;
   transform: translateY(-50%);
-
+}
+.filter-label2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: relative;
+  margin-left: 15px;
+  top: 20px;
+  transform: translateY(-50%);
 }
 .filtersInnerWrapper{
-  height: 500px;
+  height: auto;
 }
 .checkboxes-capsule {
   position: relative;
@@ -75,6 +82,7 @@
  top: calc(50% - .4em);
 }
 .slider-capsule {
+  height: 60px;
 }
 ///////////////
 
@@ -92,4 +100,22 @@
 }
 .my-hr{
   margin: 0 auto;
+}
+.min-price{
+  // float: left;
+}
+.min-price{
+  // float: right;
+}
+.min-price-div{
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  // float: left;
+}
+.max-price-div{
+  position: absolute;
+  top: 10px;
+  right: -30px;
+  // float: right;
 }
