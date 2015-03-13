@@ -3,9 +3,9 @@
 .checkBoxesInnerWrapper {
   position: relative;
   min-height: 10px;
-  height: auto;
+  height: 84px;
+  // height: auto;
   overflow: hidden; // I'm not sure why this works.
-  // height: 100%;
 }
 #check-boxes-container {
   float: top;
@@ -19,25 +19,32 @@
   border: 1px solid #DDE0E0;
   padding: 10px;
   margin: 10px;
-  width: 25%;
+  width: 120px;
   white-space: nowrap;
 
 }
 .filter2a {
   position: relative;
   background-color: white;
-  height: 80px ;
+  // height: 80px ;
+  margin: auto;
   // height: 80px ;
   // width: 80px;
   width: 15%;
   float: left;
   background-color: red;
-  border: 1px solid orange;
+  border: 1px solid black;
+  height: 100%;
+  // top: 50%;
+  // transform: translateY(-50%);
+  // margin-bottom: -99999px;
+  // padding-bottom: 99999px;
 }
 .filter2b {
   position: relative;
   background-color: white;
-  height: 80px;
+  // height: 80px;
+  height: auto;
   width: 85%;
   float: left;
   margin: 0;
@@ -64,18 +71,24 @@
   // vertical-align: middle;
   background-color: yellow;
   position: relative;
+  margin-left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  margin-left: 15px;
 
 }
 .filtersInnerWrapper{
   height: 500px;
 }
-.filter-capsule {
+.checkboxes-capsule {
   position: relative;
   height: auto;
-  min-height: 100px;
+  background-color: yellow;
+  // margin: auto;
+  overflow: hidden; // I'm not sure why this works.
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+
 }
 #slider-range {
  top: calc(50% - .4em);
