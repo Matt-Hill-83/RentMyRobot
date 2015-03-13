@@ -3,12 +3,15 @@
 .checkBoxesInnerWrapper {
   position: relative;
   min-height: 10px;
-  height: 100%;
+  height: auto;
+  overflow: hidden; // I'm not sure why this works.
+  // height: 100%;
 }
 #check-boxes-container {
   float: top;
   background-color: green;
   padding: 0px;
+  border: 2px solid green;
 }
 #checkboxes-couplet {
   float: left;
@@ -21,26 +24,25 @@
 
 }
 .filter2a {
+  position: relative;
   background-color: white;
   height: 80px ;
+  // height: 80px ;
+  // width: 80px;
   width: 15%;
   float: left;
   background-color: red;
-  position: relative;
-  // padding: 10px;
+  border: 1px solid orange;
 }
 .filter2b {
+  position: relative;
   background-color: white;
   height: 80px;
   width: 85%;
   float: left;
-  position: relative;
+  margin: 0;
 }
-.filter-capsule {
- position: absolute;
- height: 60px;
- width: 100%;
-}
+
 .filter3a {
   height: 80px;
   // padding: 10px;
@@ -64,13 +66,16 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  margin-left: 15px;
 
 }
-
+.filtersInnerWrapper{
+  height: 500px;
+}
 .filter-capsule {
-  height: auto;
-  min-height: 10px;
   position: relative;
+  height: auto;
+  min-height: 100px;
 }
 #slider-range {
  top: calc(50% - .4em);
@@ -81,12 +86,15 @@
 
 #filters-container {
   float: top;
-  background-color: white;
+  background-color: coral;
+  width: 100%;
+
 }
 #slider-container {
   float: top;
   background-color: white;
   padding: 0px;
+  position: relative;
 }
 // #filters[checkboxes][]{
 //   background-color: black;
