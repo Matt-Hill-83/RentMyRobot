@@ -25,7 +25,9 @@
   height: 80px ;
   width: 15%;
   float: left;
-  padding: 10px;
+  background-color: red;
+  position: relative;
+  // padding: 10px;
 }
 .filter2b {
   background-color: white;
@@ -41,7 +43,7 @@
 }
 .filter3a {
   height: 80px;
-  padding: 10px;
+  // padding: 10px;
   background-color: white;
   width: 15%;
   float: left;
@@ -56,8 +58,13 @@
 }
 .filter-label {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  float: top;
-  vertical-align: middle;
+  // float: top;
+  // vertical-align: middle;
+  background-color: yellow;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
 }
 
 .filter-capsule {
