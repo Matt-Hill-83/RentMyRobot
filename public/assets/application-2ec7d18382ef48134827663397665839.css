@@ -5,6 +5,7 @@
   height: 73px;
   overflow: hidden;
   background-color: white;
+  padding-left; 8px;
 }
 
 /* line 10, /Users/kletusvandamme/Google Drive/_programming/Aa materials/_final project/RentMyRobot/app/assets/stylesheets/filters.css.scss */
@@ -110,7 +111,7 @@
 /* line 90, /Users/kletusvandamme/Google Drive/_programming/Aa materials/_final project/RentMyRobot/app/assets/stylesheets/filters.css.scss */
 #filters-container {
   float: top;
-  background-color: coral;
+  background-color: white;
   width: 100%;
 }
 

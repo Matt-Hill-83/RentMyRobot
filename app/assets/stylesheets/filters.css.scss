@@ -68,6 +68,7 @@
 }
 .filtersInnerWrapper{
   height: auto;
+  padding-left: 8px;
 }
 .checkboxes-capsule {
   position: relative;
@@ -89,7 +90,7 @@
 
 #filters-container {
   float: top;
-  background-color: coral;
+  background-color: white;
   width: 100%;
 
 }
@@ -101,12 +102,6 @@
 }
 .my-hr{
   margin: 0 auto;
-}
-.min-price{
-  // float: left;
-}
-.min-price{
-  // float: right;
 }
 .min-price-div{
   position: absolute;
