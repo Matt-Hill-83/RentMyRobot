@@ -8,13 +8,22 @@
   width: 100%;
   height: 100%;
 }
-.root-banner-image {
-  z-index: -200;
-  position: relative;
-  margin-top: -53px;
-  width: 100%;
-  width:1920px !important;
-  height: 547px !important;
+
+.image-container{
+    width: 100%;
+    overflow: hidden;
+    height: 548px;
+		position: relative;
+	  margin-top: -53px;
+}
+.root-banner-image{
+
+		z-index: -200;
+	  position: relative;
+    width: 1900px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-6%)
 }
 
 .root-image-overlay-text-lg{
@@ -44,10 +53,6 @@
   text-rendering: optimizelegibility;
 }
 
-
-
-
-
 .splash-city-image {
   width: 100%;
   height: auto;
@@ -61,26 +66,46 @@
   padding-bottom: 25px;
 }
 .root-intro-text-1 {
-  font-size: 35px;
-  color: rgb(94, 94, 94);
-  margin-top: 20px;
-  margin-bottom: 10px;
   text-align: center;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: rgb(86, 90, 92);
+  display: block;
+  font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 29px;
+  font-weight: bold;
+  height: 35px;
+  line-height: 35.2000007629395px;
+  margin-bottom: 6.25px;
+  margin-top: 0px;
+  text-rendering: optimizelegibility;
 }
+
 .root-intro-text-2 {
   text-align: center;
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: rgb(94, 94, 94);
+
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: rgb(86, 90, 92);
+  display: block;
+  font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  height: 22px;
+  line-height: 22.8799991607666px;
+  margin-bottom: 47px;
+  margin-top: 0px;
+
 }
 
 .splash-city-image-text {
   color: rgb(255, 255, 255);
   position: absolute;
   margin-top: -225px;
-  font-size: 37px;
   width: 94%;
   text-align: center;
+  font-family: Circular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  // font-weight: bold;
 }
 
 .video-wrapper{
@@ -98,9 +123,19 @@ video{
   bottom: -90px;
   width: 100%;
   overflow: hidden;
-  // min-width: 1050px;
 }
 
 #login-root {
   display: none !important;
+}
+.xx-little-image-overlay-txt{
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: auto;
+  display: block;
+  height: 35px;
+  line-height: 35.2000007629395px;
+  text-align: center;
+  text-rendering: optimizelegibility;
 }
