@@ -11,6 +11,7 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
 
   events: {
     'click .btn-video': 'videoShow',
+    'click .btn-video': 'robotShow',
     // 'mouseleave .btn-video': 'videoKill'
   },
 
@@ -22,8 +23,14 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
     this.videoView = new RentMyRobot.Views.VideoShow({
       model: this.model
     });
-    // $('#right-container').html(this.videoView.render().$el);
     $('#video-container').html(this.videoView.render().$el);
+  },
+
+  robotShow: function (event) {
+    this.videoView = new RentMyRobot.Views.RobotShow({
+      model: this.model
+    });
+    $('#robot-show-container').html(this.videoView.render().$el);
   },
 
   videoKill: function (event) { // todo not implemented

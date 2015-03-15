@@ -7,7 +7,7 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     '':'showRoot',
     // '':'test',
     'main': 'main',
-    'robots/:id': 'robotShow',
+    'robots/:id': 'robotShow', //get rid of this
   },
 
   showRoot: function(){
@@ -31,7 +31,7 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
     var view = new RentMyRobot.Views.Main({
       collection: RentMyRobot.Collections.robots
     });
-    
+
     this._swapView(view);
   },
 
