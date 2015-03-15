@@ -1,30 +1,26 @@
-<div class="container-fluid col-centered" style="max-width: 600px;">
-  <div class="content-wrapper">
-    <div class="item-container">
-      <div class="container">
-        <div class="col-md-12 col-centered">
-          <div class="product">
-            <center>
-              <img id="item-display"
-                   src="assets/<%= robot.escape('image_url') %>"
-                   alt="Picture your robot here1!"
-                   class="robot-show-image"
-                   >
-              </img>
-            </center>
-          </div>
-        </div>
-        <div class="col-md-7">
-          <div class="product-title"><%= robot.escape('name') %></div>
-          <div class="product-desc"><%= robot.escape('description') %></div>
-          <hr>
-          <div class="product-price">$ <%= robot.escape('price') %></div>
-          <hr>
-        </div>
-      </div>
+<div class='main-show-div'>
 
-<div class="container">
-    <div class="col-sm-12 text-center">
+  <div class="robot-show-left">
+
+    <video class='myVideo1'
+           autoplay loop preload="auto"
+           id="robot-video"
+           >
+      <source src="assets/video/<%= robot.escape('video_url') %>"
+              type="video/mp4">
+    </video>
+
+    <div class="robot-title">
+      <div class="product-title"><%= robot.escape('name') %></div>
+      <div class="product-desc"><%= robot.escape('description') %></div>
+      <hr>
+      <div class="product-price">$ <%= robot.escape('price') %></div>
+      <hr>
+    </div>
+
+  </div>
+
+  <div class="robot-show-right">
     <div class="well">
       <h4>Leave a comment...</h4>
     <div class="input-group">
@@ -46,10 +42,6 @@
       <ul data-brackets-id="12674" id="test-ul" class="list-unstyled ui-sortable text-left" >
       </ul>
     </center>
-  </div>
-</div>
 
-
-    </div>
   </div>
-</div>
+</div> <!-- main show div -->
