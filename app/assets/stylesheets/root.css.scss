@@ -1,4 +1,6 @@
-
+.image-container{
+  position: relative;
+}
 .root-image-overlay-text {
   margin-top: -375px;
   position: absolute;
@@ -9,7 +11,7 @@
   height: 100%;
 }
 
-.image-container{
+.image-container-root-main{
     width: 100%;
     overflow: hidden;
     height: 467px;
