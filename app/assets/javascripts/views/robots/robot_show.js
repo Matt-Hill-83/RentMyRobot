@@ -9,14 +9,13 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
 
   events: {
     'click .cancel-modal': 'close',
+    // 'click .main-class': 'close', // This needs to be at a higher level scope.
 
   },
 
 
 
   close: function(){
-    // debugger
-  	// $('body').removeClass('noscroll');
   	$('.robot-show-modal').remove();
   	// $(window).off('keyup');
   },

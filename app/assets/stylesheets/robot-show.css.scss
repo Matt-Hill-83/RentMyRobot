@@ -1,3 +1,12 @@
+.cancel-modal {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 100000;
+}
+
 .robot-desc{
   margin-left: 5px;
   margin-right: 5px;

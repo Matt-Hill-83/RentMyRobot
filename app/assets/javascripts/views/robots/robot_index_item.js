@@ -10,11 +10,7 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
   className: 'robot-index-element-wrapper',
 
   events: {
-    'click .cancel-modal': 'close',
-
     'click .robot-index-image': 'robotShow',
-    'click .main-show-div': 'showViewKill'
-    // 'mouseleave .main-show-div': 'showViewKill'
   },
 
   initialize: function () {
@@ -27,15 +23,6 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
     });
     $('#robot-show-container').html(this.showView.render().$el);
   },
-
-  showViewKill: function (event) { // todo not implemented
-    debugger
-    console.log('test');
-    this.showView.remove();
-    this.showView = null;
-  },
-
-
 
   render: function () {
     var content = this.template({
