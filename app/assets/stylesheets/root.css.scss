@@ -1,6 +1,15 @@
-.root-main{
+.root-background{
+  position: fixed;
+  z-index: -1000;
+  height: 100%;
+  width: 100%;
+  // background-color: red;
   background-color: #ECEFED;
-  z-index: -1;
+
+}
+
+.root-main{
+  // z-index: -1;
 }
 
 .image-container{
@@ -23,7 +32,7 @@
 		position: relative;
 	  margin-top: -53px;
     background-color: transparent;
-    z-index: -1;
+    // z-index: -1;
 
 }
 .root-banner-image{
