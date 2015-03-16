@@ -12,11 +12,19 @@
 
     <div class="robot-title">
       <div class="product-title"><%= robot.escape('name') %></div>
-      <div class="product-desc"><%= robot.escape('description') %></div>
+      <div class="product-desc">Description here.<%= robot.escape('description') %></div>
       <hr>
       <div class="product-price">$ <%= robot.escape('price') %></div>
       <hr>
     </div>
+
+    <div class='show-image-text-container'>
+      <p class='show-robot-info-line-1'> <%= robot.escape('name') %> (<%= robot.escape('robot_type') %>) </p>
+      <p class='show-robot-info-line-2'><%= robot.escape('manufacturer') %> </p>
+    </div>
+
+
+
 
   </div>
 

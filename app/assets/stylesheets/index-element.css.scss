@@ -5,27 +5,10 @@
   float: top;
   margin: 0px;
  }
-.button-container{
-  position: absolute;
-  z-index: 1000;
-  display: none;
-  margin-left: 50%;
-  width: auto;
-
-}
-.btn-video{
-  position: relative;
-  left: -50%;
-}
-
-.robot-index-element-wrapper:hover .button-container{
-  display: block;
-}
 
 .robot-index-element-image-wrapper {
   background-color: white;
   display: block;
-  // display: inline-block;
   float: top;
   border-style: solid;
   width: 100%;

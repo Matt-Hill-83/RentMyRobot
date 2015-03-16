@@ -10,20 +10,12 @@ RentMyRobot.Views.RobotIndexItem = Backbone.CompositeView.extend({
   className: 'robot-index-element-wrapper',
 
   events: {
-    'click .btn-video': 'videoShow',
-    'click .btn-video': 'robotShow',
+    'click .robot-index-image': 'robotShow',
     // 'mouseleave .btn-video': 'videoKill'
   },
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
-  },
-
-  videoShow: function (event) {
-    this.videoView = new RentMyRobot.Views.VideoShow({
-      model: this.model
-    });
-    $('#video-container').html(this.videoView.render().$el);
   },
 
   robotShow: function (event) {

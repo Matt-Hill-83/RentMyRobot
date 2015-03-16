@@ -1,3 +1,17 @@
+//
+// .video-wrapper{
+//   height: 638px;
+//   overflow-y: hidden;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: -100;
+//   background: black;
+// }
+
+
+
+
 #robot-show-container{
 }
 
@@ -11,7 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(200,200,200);
+  background-color: rgb(230,230,230);
 
   border: 2px solid orange;
   border-radius: 10px;
@@ -24,12 +38,13 @@
 
 
 .robot-show-left{
+  overflow: hidden;
   background-color: rgb(200,200,200);
   display: inline-block;
   position: relative;
-  float: top;
-  height: 50%;
-  width: auto;
+  float: left;
+  width: 60%;
+  height: auto;
   padding: 15px;
   // margin: 15px;
   border: 1px solid red;
@@ -37,12 +52,13 @@
 }
 
 .robot-show-right{
+  overflow: hidden;
   background-color: rgb(100,100,100);
   display: inline-block;
   position: relative;
-  float: top;
-  width: 100%;
-  height: 50%;
+  float: left;
+  width: 40%;
+  height: auto;
   padding: 15px;
   border: 1px solid green;
   border-radius: 10px;
@@ -103,7 +119,7 @@
  margin-top: 25px;
  margin-bottom: 10px;
  border: 0px;
- border-radius: 0px;
+ border-radius: 10x;
 }
 .view-wrapper {
  float: right;
@@ -148,10 +164,10 @@
  -moz-transition: all .2s ease-in;
  -webkit-transition: all .2s ease-in;
 }
-.service1-item > img:hover {
- cursor: pointer;
- opacity: 1;
-}
+// .service1-item > img:hover {
+//  cursor: pointer;
+//  opacity: 1;
+// }
 .service-image-left {
  padding-right: 50px;
 }
