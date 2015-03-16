@@ -16,7 +16,6 @@ RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
     });
 
     this.$el.html(content);
-debugger
     // add nested comments
     if (this.model.comments()){
         var that = this;
