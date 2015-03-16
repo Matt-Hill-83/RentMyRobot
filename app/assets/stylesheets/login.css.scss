@@ -8,12 +8,12 @@
   z-index: 1000;
   position: absolute;
   bottom: 15px;
-  left: 54%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .inner-container{
   position: relative;
-  left: -50%;
 }
 
 .email-input{
