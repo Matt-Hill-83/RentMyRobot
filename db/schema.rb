@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150210145955) do
+ActiveRecord::Schema.define(version: 20150316071008) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20150210145955) do
     t.integer  "user_id",    null: false
     t.integer  "robot_id",   null: false
     t.string   "title",      null: false
-    t.string   "body",       null: false
+    t.text     "body",       null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20150210145955) do
   create_table "robots", force: true do |t|
     t.string   "name",         null: false
     t.string   "manufacturer"
-    t.string   "description"
+    t.text     "description"
     t.string   "location"
     t.string   "image_url"
     t.string   "video_url"
