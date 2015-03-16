@@ -1,11 +1,26 @@
 RentMyRobot.Views.RobotShow = Backbone.CompositeView.extend({
-  className: 'clearfix',
+  className: 'robot-show-modal',
 
   template: JST['robots/show'],
 
   initialize: function () {
     this.listenTo(this.model, 'sync', this.render);
   },
+
+  events: {
+    'click .cancel-modal': 'close',
+
+  },
+
+
+
+  close: function(){
+    // debugger
+  	// $('body').removeClass('noscroll');
+  	$('.robot-show-modal').remove();
+  	// $(window).off('keyup');
+  },
+
 
   render: function () {
     if (!this.model.get('name')){
