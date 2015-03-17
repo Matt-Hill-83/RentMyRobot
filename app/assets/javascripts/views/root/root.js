@@ -6,6 +6,7 @@ RentMyRobot.Views.Root = Backbone.CompositeView.extend({
 
 	events: {
 		'click button#glogin-root': 'guestLogIn',
+		'click .root-small-image-container': 'guestLogIn',
 		'click button#login-root': 'goToMain'
 		// 'click #image-overlay-txt': 'guestLogIn'
 	},
