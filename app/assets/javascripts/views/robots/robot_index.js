@@ -3,9 +3,12 @@ RentMyRobot.Views.RobotList = Backbone.CompositeView.extend({
 
   initialize: function () {
     this.listenTo(this.collection, 'sync', this.render);
+    that = this;
     this.collection.each( function (robot) {
       that.addRobotItem(robot);
     });
+
+
     this.listenTo(this.collection, 'add', this.addRobotItem);
     this.listenTo(this.collection, 'remove', this.removeRobotItem);
   },

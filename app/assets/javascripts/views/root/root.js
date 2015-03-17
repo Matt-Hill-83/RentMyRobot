@@ -12,6 +12,7 @@ RentMyRobot.Views.Root = Backbone.CompositeView.extend({
 
 	guestLogIn: function(event){
 		event.preventDefault();
+		console.log('test');
 
 		$('#sign-in-email').val('bfuller@robitx.com');
 		$('#sign-in-password').val('123456');
