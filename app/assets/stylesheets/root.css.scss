@@ -1,15 +1,23 @@
+.glyphicon-remove{
+  color: red;
+  font-size: 50px;
+  top: 50% !important;
+  position: absolute !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 .root-background{
   position: fixed;
   z-index: -1000;
   height: 100%;
   width: 100%;
-  // background-color: red;
   background-color: #ECEFED;
 
 }
 
 .root-main{
-  // z-index: -1;
 }
 
 .image-container{
