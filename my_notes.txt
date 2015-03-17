@@ -1,0 +1,9 @@
+To reseed the database on heroku:
+
+heroku pg:reset DATABASE
+heroku run rake db:migrate
+heroku run rake db:seed
+
+To precompile the assest:
+
+rake assets:precompile

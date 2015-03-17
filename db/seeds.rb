@@ -4,11 +4,6 @@ csv_data = CSV.read 'robot_seed_data.csv'
 headers = csv_data.shift.map {|i| i.to_s }
 string_data = csv_data.map {|row| row.map {|cell| cell.to_s } }
 array_of_hashes = string_data.map {|row| Hash[*headers.zip(row).flatten] }
-    puts csv_data
-    puts '--------------'
-    puts string_data
-    puts '--------------'
-    puts array_of_hashes
 
 def create_robots!(array_of_hashes)
   description = 'This robot is known for its remarkable stamina and durability.  While is was first introduced as a research project, it\'s successes in the prototyping stage have resulted in increased funding and further expansion of the project.'
