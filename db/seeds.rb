@@ -4,11 +4,17 @@ csv_data = CSV.read 'robot_seed_data.csv'
 headers = csv_data.shift.map {|i| i.to_s }
 string_data = csv_data.map {|row| row.map {|cell| cell.to_s } }
 array_of_hashes = string_data.map {|row| Hash[*headers.zip(row).flatten] }
+    puts csv_data
+    puts '--------------'
+    puts string_data
+    puts '--------------'
+    puts array_of_hashes
 
 def create_robots!(array_of_hashes)
   description = 'This robot is known for its remarkable stamina and durability.  While is was first introduced as a research project, it\'s successes in the prototyping stage have resulted in increased funding and further expansion of the project.'
 
   array_of_hashes.each_with_index do |row, robot_number|
+
     Robot.create!(
       name: row['name'],
       manufacturer: row['manufacturer'],
@@ -19,8 +25,8 @@ def create_robots!(array_of_hashes)
       lat: rand() * 0.050 + 37.735,
       lng: rand() * 0.050 + -122.482,
       price: row['price'].to_i,
-      description: description,
-      # description: row['description_text'],
+      # description: description,
+      description: row['description_text'],
       robot_type: row['robot_type'],
       )
 
