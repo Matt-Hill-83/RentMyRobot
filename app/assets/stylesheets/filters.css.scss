@@ -81,6 +81,7 @@
 }
 #slider-range {
  top: calc(50% - .4em);
+ z-index: 0;
 }
 .slider-capsule {
   height: 60px;
