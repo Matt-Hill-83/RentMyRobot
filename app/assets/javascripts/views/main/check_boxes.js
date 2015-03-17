@@ -3,7 +3,6 @@ RentMyRobot.Views.CheckBoxes = Backbone.CompositeView.extend({
   className: 'checkBoxesInnerWrapper',
 
   initialize: function () {
-    // this.listenTo(this.collection, 'sync', this.render);
     this.render;
   },
 
