@@ -6,22 +6,12 @@ RentMyRobot.Routers.Router = Backbone.Router.extend({
   routes: {
     '':'showRoot',
     'main': 'main',
-    // 'robots/:id': 'robotShow', //get rid of this
   },
 
   showRoot: function(){
     this._rootView = new RentMyRobot.Views.Root({});
     this._swapView(this._rootView);
   },
-
-  // test: function(){
-  //   RentMyRobot.Collections.robots.fetch();
-  //   var testView = new RentMyRobot.Views.TestView({
-  //   collection: RentMyRobot.Collections.robots,
-  //
-  //   });
-  //   this._swapView(testView);
-  // },
 
   main: function () {
     $('body').removeClass('modal-open');

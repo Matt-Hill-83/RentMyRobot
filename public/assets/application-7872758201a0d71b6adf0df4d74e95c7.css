@@ -599,7 +599,7 @@ h3, p {
 }
 
 /* line 75, /Users/kletusvandamme/Google Drive/_programming/Aa materials/_final project/RentMyRobot/app/assets/stylesheets/root.css.scss */
-.splash-city-image {
+.root-image-small {
   width: 100%;
   height: auto;
 }
@@ -647,7 +647,7 @@ h3, p {
 }
 
 /* line 119, /Users/kletusvandamme/Google Drive/_programming/Aa materials/_final project/RentMyRobot/app/assets/stylesheets/root.css.scss */
-.splash-city-image-text {
+.root-image-small-text {
   color: white;
   position: absolute;
   margin-top: -225px;

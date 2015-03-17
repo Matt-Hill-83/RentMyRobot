@@ -6,9 +6,8 @@ RentMyRobot.Views.Root = Backbone.CompositeView.extend({
 
 	events: {
 		'click button#glogin-root': 'guestLogIn',
-		'click .root-small-image-container': 'guestLogIn',
+		'click .root-small-image-container': 'smallImageLogIn',
 		'click button#login-root': 'goToMain'
-		// 'click #image-overlay-txt': 'guestLogIn'
 	},
 
 	guestLogIn: function(event){
@@ -19,7 +18,18 @@ RentMyRobot.Views.Root = Backbone.CompositeView.extend({
 		$('#sign-in-password').val('123456');
 		setTimeout(function(){
 			$('#login-root').click();
-		}, 1500);
+		}, 1000);
+	},
+
+	smallImageLogIn: function(event){
+		event.preventDefault();
+		console.log('test');
+
+		$('#sign-in-email').val('bfuller@robitx.com');
+		$('#sign-in-password').val('123456');
+		setTimeout(function(){
+			$('#login-root').click();
+		}, 0);
 	},
 
 	goToMain: function(event){
