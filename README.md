@@ -2,6 +2,8 @@
 
 * [Live Link](http://www.rent-my-robot.com//)
 
+![robots-index]
+[robots-index]: ./docs/wireframes/robots_index.png
 ## Minimum Viable Product
 Rent My Robot is a clone of Airbnb built on Rails and Backbone.
 It will show an index view and accompanying map of robots in San Francisco.
@@ -12,11 +14,6 @@ Users can:
 - [ ] View available robots on map
 - [ ] Filter robots listing by price range
 - [ ] Filter robots listing by robot type (UAV, industrial, humanoid, military)
-
-## GUI
-![robots-index]
-[robots-index]: ./docs/wireframes/robots_index.png
-
 
 ## Design Docs
 * [View Wireframes][views]
