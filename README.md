@@ -10,17 +10,11 @@ Robot-Gallery is a clone of Airbnb built on Rails and Backbone.
 It will show an index view and accompanying map of robots in San Francisco.
 Users can:
 
-- [ ] Create accounts
-- [ ] Create sessions (log in)
 - [ ] View available robots by listing
 - [ ] View embedded video of robot
 - [ ] View available robots on map
-- [ ] Filter robots listing by name
 - [ ] Filter robots listing by price range
 - [ ] Filter robots listing by robot type (UAV, industrial, humanoid, military)
-- [ ] Comment on a robot
-- [ ] Like a robot
-- [ ] View a collection of liked robots
 
 
 ## Design Docs
