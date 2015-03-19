@@ -65,7 +65,7 @@ In this phase I will implement the CSS and backbone styling.ß
 
 [Details][phase-eight]
 
-### Phase 9: Add non-critical feeatures (1 days)
+### Phase 9: Add non-critical features (1 days)
 In this phase I will complete punch list items that were depriotitized in order to prove out the core functionality.  These include the ability to edit and delete comments.
 
 [Details][phase-nine]
