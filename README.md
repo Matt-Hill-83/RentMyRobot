@@ -1,8 +1,9 @@
 # Robot Gallery
 
-[Heroku link][heroku]
+# Personal Portfolio site
 
-[heroku]: https://rentmyrobot.herokuapp.com/
+
+* [Live Link](http://www.rent-my-robot.com//)
 
 ## Minimum Viable Product
 Robot-Gallery is a clone of Airbnb built on Rails and Backbone.
