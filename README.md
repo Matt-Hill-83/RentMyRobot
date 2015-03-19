@@ -13,6 +13,10 @@ Users can:
 - [ ] Filter robots listing by price range
 - [ ] Filter robots listing by robot type (UAV, industrial, humanoid, military)
 
+## GUI
+![robots-index]
+[robots-index]: ./wireframes/robots_index.png
+
 
 ## Design Docs
 * [View Wireframes][views]
@@ -48,28 +52,6 @@ In this phase I will integrate the GUI tools that allow the user to filter the l
 ### Phase 5: comments/create, comments/show (1 days)
 In this phase I will create a view that allows the user to add a comment to a robot's show page.  I will also edit the robot's show page so that it includes a subView of all the comments for that robot.
 
-[Details][phase-five]
-
-### Phase 6: like/create, like/show (1 days)
-In this phase I will allow the user to "like" a robot.  There will be a small outline of a heart on the corner of each robot's image.  If they click this, the heart will become solid and the robot have a has_many relationship with a like model in the database.
-
-[Details][phase-six]
-
-### Phase 7: robot_likes/show (1 days)
-In this phase I will create the view that show all the robots that the user has "liked".  This will probably be just a filtered index view.
-
-[Details][phase-seven]
-
-### Phase 8: Styling (2 days)
-In this phase I will implement the CSS and backbone styling.ß
-
-[Details][phase-eight]
-
-### Phase 9: Add non-critical features (1 days)
-In this phase I will complete punch list items that were depriotitized in order to prove out the core functionality.  These include the ability to edit and delete comments.
-
-[Details][phase-nine]
-
 ### Bonus Features (TBD)
 - [ ] Ability to search for a robot by name, including autosuggest
 - [ ] Ability to add a new robot
@@ -82,7 +64,3 @@ In this phase I will complete punch list items that were depriotitized in order 
 [phase-three]: ./docs/phases/project_schedule.png
 [phase-four]: ./docs/phases/project_schedule.png
 [phase-five]: ./docs/phases/project_schedule.png
-[phase-six]: ./docs/phases/project_schedule.png
-[phase-seven]: ./docs/phases/project_schedule.png
-[phase-eight]: ./docs/phases/project_schedule.png
-[phase-nine]: ./docs/phases/project_schedule.png
