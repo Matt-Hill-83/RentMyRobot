@@ -15,7 +15,7 @@ Users can:
 
 ## GUI
 ![robots-index]
-[robots-index]: ./wireframes/robots_index.png
+[robots-index]: ./docs/wireframes/robots_index.png
 
 
 ## Design Docs
