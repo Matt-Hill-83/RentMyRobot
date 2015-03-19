@@ -1,12 +1,9 @@
-# Robot Gallery
-
-# Personal Portfolio site
-
+# Rent My Robot
 
 * [Live Link](http://www.rent-my-robot.com//)
 
 ## Minimum Viable Product
-Robot-Gallery is a clone of Airbnb built on Rails and Backbone.
+Rent My Robot is a clone of Airbnb built on Rails and Backbone.
 It will show an index view and accompanying map of robots in San Francisco.
 Users can:
 
